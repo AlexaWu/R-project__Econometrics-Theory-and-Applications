@@ -6,9 +6,9 @@
 
 **Topics**: Randomized Trials, Regression, Instrumental Variables, Regression Continuity Designs, Differences in Differences, Financial Data Properties, Linear Models for Financial Time Series, Asset Volatility, Application of Volatility Models, and Value-at-Risk
 
-> This is a Master’s level course in Econometrics. Students who successfully complete this course should be comfortable applying a number of widely accepted econometric methods using common statistical software. This course will focus on econometric methods involving panel and time series data, with applications relevant for both economics and finance. Students should feel be able to report the results of their work to a variety of audiences. They should be able to critique reported regression results in applied academic papers and interpret the results for someone who is not trained as an economist.
+> This is a Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance. Students should be able to **critique reported regression results in applied academic papers** and **interpret the results to a variety of audiences**.
 
-### ANALYSIS OF FINANCIAL DATA WITH R
+### ANALYSIS OF FINANCIAL DATA WITH R - Tsay (ISBN-13:978‐0470890813)
 
 [Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/ANALYSIS%20OF%20FINANCIAL%20DATA%20WITH%20R%201.r)\
 [Part 2](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/ANALYSIS%20OF%20FINANCIAL%20DATA%20WITH%20R%202.r)\
