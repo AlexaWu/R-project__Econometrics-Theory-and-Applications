@@ -16,7 +16,7 @@
 [Part 4](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Mastering%20'Metrics%204.r)\
 [Part 5](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Mastering%20'Metrics%205.r)
 
-### ANALYSIS OF FINANCIAL DATA WITH R
+### Analysis of Financial Data with R
 
 [Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/ANALYSIS%20OF%20FINANCIAL%20DATA%20WITH%20R%201.r)\
 [Part 2](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/ANALYSIS%20OF%20FINANCIAL%20DATA%20WITH%20R%202.r)\
