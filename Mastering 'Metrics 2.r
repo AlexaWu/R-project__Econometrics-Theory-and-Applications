@@ -31,8 +31,6 @@ Residual standard error: 7.367 on 47 degrees of freedom
 Multiple R-squared:  0.4787,    Adjusted R-squared:  0.4676 
 F-statistic: 43.15 on 1 and 47 DF,  p-value: 3.687e-08
 
----
-
 # Multiple Variable OLS
 
 #Import Dataset
