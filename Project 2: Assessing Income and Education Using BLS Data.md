@@ -28,9 +28,12 @@
 *4. Basic Linear: Multiple Variable Regression in R*
   - Run multivariable OLS on Income:
     - Add father’s education, sex, and race – make sure to use the dummy variables you created for Sex and Race
-    ![]()
+    ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/multivariable%20OLS%20on%20Income.jpg)
       - Using homoskedasticity-only standard errors
       - Using heteroskedasticity robust SE
+    - Add	AFQT	Score	to	previous	specification:
+    ![]()
+
     
 
 *5. Various Functional Forms: Multiple Variable Regression in R*
