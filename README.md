@@ -30,7 +30,7 @@
 3. Data Analysis re: Income
 4. Data Analysis re: Income and AFQT
 
-### Project 2: Assessing Income and Education Using BLS Data (Part 2)
+### [Project 2: Assessing Income and Education Using BLS Data (Part 2)](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
 
 1. Data Manipulation in R
 2. Hypothesis Testing in R
