@@ -4,8 +4,6 @@
 - Applied econometric methods involving panel and time series data.
 - Critiqued reported regression results in applied academic papers, and interpret the results to a variety of audiences.
 
-**Topics**: Randomized Trials, Regression, Instrumental Variables, Regression Continuity Designs, Differences in Differences, Financial Data Properties, Linear Models for Financial Time Series, Asset Volatility, Application of Volatility Models, and Value-at-Risk
-
 > This is a Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance.
 
 ### Mastering ‘Metrics: The Path From Cause To Effect
