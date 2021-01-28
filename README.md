@@ -21,15 +21,18 @@
 [Part 3: Linear Models for Financial Time Series](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%203.r)\
 [Part 4: Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%204.r)
 
-### [Project 1: Assessing Income and Education Using BLS Data (Part 1)](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
+### :computer: Project 1: Assessing Income and Education Using BLS Data
+
+[Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
 
 > Sponsored by the Bureau of Labor Statistics, the National Longitudinal Surveys (NLS) are a family of surveys dedicated to tracking the labor market and other life experiences of American men and women.
+
 1. Downloading Data
 2. Data Manipulation in Excel
 3. Data Analysis re: Income
 4. Data Analysis re: Income and AFQT
 
-### [Project 2: Assessing Income and Education Using BLS Data (Part 2)](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
+[Part 2](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
 
 1. Data Manipulation in R
 2. Hypothesis Testing in R
@@ -37,7 +40,9 @@
 4. Basic Linear: Multiple Variable Regression in R
 5. Various Functional Forms: Multiple Variable Regression in R
 
-### Project 3: Analysis of Financial Data (Part	1)
+### :computer: Project 2: Analysis of Financial Data 
+
+[Part 1]()
 
 1. Stock Price Data
 2. Daily Log Returns for Stock Data
@@ -45,7 +50,7 @@
 4. Computing Monthly Log Returns
 5. Analysis of Monthly Log Returns
 
-### Project 4: Analysis of Financial Data (Part	2)
+[Part 2]()
 
 1. Linear Model Analysis of Vanguard Total Stock Market Index Fund
 2. Modeling Volatility for Amazon, Inc.
