@@ -23,7 +23,7 @@
 [Part 3: Linear Models for Financial Time Series](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/ANALYSIS%20OF%20FINANCIAL%20DATA%20WITH%20R%203.r)\
 [Part 4: Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/ANALYSIS%20OF%20FINANCIAL%20DATA%20WITH%20R%204.r)
 
-### Project 1: Assessing Income and Education Using BLS Data (Part 1)
+### [Project 1: Assessing Income and Education Using BLS Data (Part 1)](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
 
 1. Downloading Data
 2. Data Manipulation in Excel
@@ -31,3 +31,11 @@
 4. Data Analysis re: Income and AFQT
 
 ### Project 2: Assessing Income and Education Using BLS Data (Part 2)
+
+1. Data Manipulation in R
+2. Hypothesis Testing in R
+3. Single Variable Regression Analysis in R
+4. Basic Linear: Multiple Variable Regression in R
+5. Various Functional Forms: Multiple Variable Regression in R
+
+### Project 3: Analysis of Financial Data (Part	1)
