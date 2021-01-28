@@ -2,38 +2,42 @@
 [1] "C:/Users/Alexa~Chutian/Documents"
 > setwd('C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/A&P')
 
-#Import	Dataset
+#Import Dataset
+
 > ExportM1=read.csv("ExportM1.csv")
 > attach(ExportM1)
 > names(ExportM1)
 [1] "ID"    "Hours" "Grade"
 
-#Calculate	summary	statistics
+#Calculate summary statistics
+
 > summary(Grade)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
   50.00   72.00   79.00   77.69   85.00   94.00
 
-#Calculate	mean
+#Calculate mean
+
 > mean(Grade)
 [1] 77.69388
 
-#Calculate	sample	variance
+#Calculate sample variance
+
 > var(Grade)
 [1] 101.9252
 
-#Calculate	sample	standard	deviation
+#Calculate sample standard deviation
 > sd(Grade)
 [1] 10.0958
 
-#Calculate	sample	covariance
+#Calculate sample covariance
 > cov(Grade,Hours)
 [1] 14.76233
 
-#Calculate	sample	correlation	coefficient		
+#Calculate sample correlation	coefficient		
 > cor(Grade,Hours)
 [1] 0.6918535
 
-#Calculate	population	skewness
+#Calculate population skewness
 > install.packages("moments")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -52,13 +56,13 @@ The downloaded binary packages are in
 > kurtosis(Grade)
 [1] 2.970073
 
-#Import	Dataset
+#Import Dataset
 > ExportM2=read.csv("ExportM2.csv")
 > attach(ExportM2)
 > names(ExportM2)
 [1] "Grade_D0" "Grade_D1"
 
-#T	Test	NOT	assuming	equal	variance	(i.e.	unpooled)
+#T Test NOT assuming equal variance (i.e. unpooled)
 > t.test(Grade_D0,Grade_D1,var.equal=FALSE,paired=FALSE)
 
         Welch Two Sample t-test
@@ -72,7 +76,7 @@ sample estimates:
 mean of x mean of y 
  73.14286  83.76190 
 
-#T	Test	assuming	equal	variance	(i.e.	pooled)
+#T Test assuming equal variance (i.e. pooled)
 > t.test(Grade_D0,Grade_D1,var.equal=TRUE,paired=FALSE)
 
         Two Sample t-test
