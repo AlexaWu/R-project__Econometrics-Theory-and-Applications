@@ -1,6 +1,12 @@
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
+
+# Daily data
+
+#setting working directory
 > setwd('C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/A&P')
+
+#Install packages required to import financial data via open sources
 > install.packages("TTR")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -46,6 +52,9 @@ Version 0.4-0 included new data defaults. See ?getSymbols.
 Learn from a quantmod author: https://www.datacamp.com/courses/importing-and-managing-financial-data-in-r
 Warning message:
 package ‘quantmod’ was built under R version 3.3.3 
+
+#Download daily Apple stock prices via Yahoo Finance – which is default aggregator
+#Copying and pasting can create issues with quotes
 > getSymbols('AAPL')
     As of 0.4-0, ‘getSymbols’ uses env=parent.frame() and
  auto.assign=TRUE by default.
@@ -57,8 +66,12 @@ package ‘quantmod’ was built under R version 3.3.3
  This message is shown once per session and may be disabled by setting 
  options("getSymbols.warning4.0"=FALSE). See ?getSymbols for more details.
 [1] "AAPL"
+
+#Dimensions for dataset imported
 > dim(AAPL)
 [1] 2594    6
+
+#See first 6 rows of data
 > head(AAPL)
            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume AAPL.Adjusted
 2007-01-03     86.29     86.58    81.90      83.80   309579900      10.85709
@@ -67,6 +80,8 @@ package ‘quantmod’ was built under R version 3.3.3
 2007-01-08     85.96     86.53    85.28      85.47   199276700      11.07345
 2007-01-09     86.45     92.98    85.15      92.57   837324600      11.99333
 2007-01-10     94.75     97.80    93.45      97.00   738220000      12.56728
+
+#See last 6 rows of data
 > tail(AAPL)
            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume AAPL.Adjusted
 2017-04-13    141.91    142.38   141.05     141.05    17652900        141.05
@@ -75,6 +90,9 @@ package ‘quantmod’ was built under R version 3.3.3
 2017-04-19    141.88    142.00   140.45     140.68    17271300        140.68
 2017-04-20    141.22    142.92   141.16     142.44    23251100        142.44
 2017-04-21    142.44    142.68   141.85     142.27    17245200        142.27
+
+#Specifying dates of interest for subset
+#Note data shown on Yahoo screen different than downloaded to CSV
 > getSymbols('AAPL', from="2008-01-01", to="2013-12-31") 
 [1] "AAPL"
 > head(AAPL)
@@ -95,12 +113,18 @@ package ‘quantmod’ was built under R version 3.3.3
 2013-12-31    554.17    561.28   554.00     561.02    55771100      75.17313
 > dim(AAPL)
 [1] 1511    6
+
+#Export data to TXT file – then can copy and paste into Excel
 > write.table(AAPL, "AAPL.txt", sep='\t', col.names = NA)
+
+#Plot daily close price & volume with options for white background and wider chart
 > chartSeries(AAPL, theme="white")
 > require(TTR) 
 > saveChart('pdf', width=13)
 Error in assign(".chob", x, env) : 
   cannot change value of locked binding for '.chob'
+
+#Calculate log returns (first difference of logs) and save as new dataset
 > AAPL.rtn=diff(log(AAPL$AAPL.Adjusted))
 > head(AAPL.rtn) 
            AAPL.Adjusted
@@ -118,9 +142,13 @@ Error in assign(".chob", x, env) :
 2013-12-27  -0.006779487
 2013-12-30  -0.009994628
 2013-12-31   0.011653710
+
+#Drop 1st row for returns
 > AAPL.rtn <-AAPL.rtn[2:nrow(AAPL.rtn), ] 
 > dim(AAPL.rtn)
 [1] 1510    1
+
+#Calculate summary statistics for log returns for adjusted close price	
 > install.packages("fBasics")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -201,6 +229,8 @@ Variance         0.000512
 Stdev            0.022619
 Skewness        -0.546244
 Kurtosis         7.073274
+
+#Conduct t-test	re: mean return	of 0
 > t.test(AAPL.rtn)
 
         One Sample t-test
@@ -214,18 +244,23 @@ sample estimates:
    mean of x 
 0.0007226687 
 
+#Conduct Skewness Test
 > s3=skewness(AAPL.rtn) 
 > T=length(AAPL.rtn) 
 > s3/sqrt(6/T)
 [1] -8.665623
 attr(,"method")
 [1] "moment"
+
+#Conduct Kurtosis Test – must use excess kurtosis here
 > s4=kurtosis(AAPL.rtn)
 > T=length(AAPL.rtn) 
 > s4/sqrt(24/T)
 [1] 56.10523
 attr(,"method")
 [1] "excess"
+
+#Conduct Kurtosis Test – must use excess kurtosis here
 > normalTest(AAPL.rtn , method='jb')
 
 Title:
@@ -243,6 +278,10 @@ Description:
 Warning message:
 In if (class(x) == "fREG") x = residuals(x) :
   the condition has length > 1 and only the first element will be used
+
+# Monthly Data
+
+#Calculate monthly log returns
 > AAPL.mo.rtn <- periodReturn(AAPL, period='monthly', type='log', leading='True')
 > dim(AAPL.mo.rtn)
 [1] 72  1
@@ -262,6 +301,8 @@ In if (class(x) == "fREG") x = residuals(x) :
 2013-10-31     0.092015440
 2013-11-29     0.061886508
 2013-12-31     0.008862406
+
+#Import data for S&P 500 from Yahoo
 > getSymbols('SPY', from="2008-01-01", to="2013-12-31") 
 [1] "SPY"
 > head(SPY)
@@ -280,6 +321,8 @@ In if (class(x) == "fREG") x = residuals(x) :
 2013-12-27   184.10   184.18  183.66    183.85   61814000     172.2170
 2013-12-30   183.87   184.02  183.58    183.82   56857000     172.1889
 2013-12-31   184.07   184.69  183.93    184.69   86119900     173.0038
+
+#Calculate monthly log returns
 > SPY.mo.rtn <- periodReturn(SPY, period='monthly', type='log', leading='True')
 > dim(SPY.mo.rtn) 
 [1] 72  1
@@ -299,6 +342,8 @@ In if (class(x) == "fREG") x = residuals(x) :
 2013-10-31      0.04526659
 2013-11-29      0.02920697
 2013-12-31      0.02018172
+
+#Save histograms with 20 buckets
 > pdf('AAPL_Histogram.pdf', width=10) 
 > hist(AAPL.mo.rtn, nclass=20) 
 > dev.off()
@@ -309,12 +354,18 @@ windows
 > dev.off()
 windows 
       2 
+
+#Pearson correlation between Apple and S&P monthly returns
 > cor(AAPL.mo.rtn, SPY.mo.rtn)
                 monthly.returns
 monthly.returns       0.5737038
+
+#Covariance between Apple and S&P monthly returns
 > cov(AAPL.mo.rtn, SPY.mo.rtn)
                 monthly.returns
 monthly.returns     0.003191284
+
+#Combine Apple and S&P monthly returns into matrix for analysis
 > monthly<-data.frame(SPY=SPY.mo.rtn, AAPL=AAPL.mo.rtn) 
 > names(monthly)[1]<-"SPY"
 > names(monthly)[2]<-"AAPL"
@@ -348,6 +399,9 @@ Residual standard error: 0.08769 on 70 degrees of freedom
 Multiple R-squared:  0.3291,    Adjusted R-squared:  0.3196 
 F-statistic: 34.34 on 1 and 70 DF,  p-value: 1.38e-07
 
+#Run linear market model
+#R-squared is % of movement in stock explained by movements in overall market
+#Beta indicates whether asset is more or less volatile than overall market
 > summary(lm(AAPL.mo.rtn ~ SPY.mo.rtn))
 
 Call:
@@ -368,8 +422,11 @@ Residual standard error: 0.08769 on 70 degrees of freedom
 Multiple R-squared:  0.3291,    Adjusted R-squared:  0.3196 
 F-statistic: 34.34 on 1 and 70 DF,  p-value: 1.38e-07
 
+#Compute beta directly
 > cov(AAPL.mo.rtn, SPY.mo.rtn)/ var(SPY.mo.rtn)
                 monthly.returns
 monthly.returns        1.165484
+
+#Export data to TXT file – then can copy and paste into Excel
 > write.table(monthly, "Monthly.txt", sep='\t', col.names = NA)
 
