@@ -3,25 +3,21 @@
 > setwd('C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/A&P')
 
 #Import Dataset
-
 > ExportM1=read.csv("ExportM1.csv")
 > attach(ExportM1)
 > names(ExportM1)
 [1] "ID"    "Hours" "Grade"
 
 #Calculate summary statistics
-
 > summary(Grade)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
   50.00   72.00   79.00   77.69   85.00   94.00
 
 #Calculate mean
-
 > mean(Grade)
 [1] 77.69388
 
 #Calculate sample variance
-
 > var(Grade)
 [1] 101.9252
 
@@ -33,7 +29,7 @@
 > cov(Grade,Hours)
 [1] 14.76233
 
-#Calculate sample correlation	coefficient		
+#Calculate sample correlation coefficient
 > cor(Grade,Hours)
 [1] 0.6918535
 
