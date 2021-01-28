@@ -1,6 +1,6 @@
 ## Project Contents
 
-*1. Downloading Data*
+**_1. Downloading Data_**
   - Select BSL Longitudinal Survey Data https://www.nlsinfo.org/investigator/pages/login.jsp
   - Download and Save Dataset
   
