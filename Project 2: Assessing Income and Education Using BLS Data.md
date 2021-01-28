@@ -14,11 +14,23 @@
     - 99% Confidence interva
 
 *3. Single Variable Regression Analysis in R*
-  - Run OLS with one Regressor on Income: Incomei =	Bo + B1(Educationi) + ui
-  ![]()
+  - Run OLS with one Regressor on Income: 
+  ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/OLS%20with%20one%20Regressor%20on%20Income.jpg)
     - Using homoskedasticity-only standard errors
+    - Using heteroskedasticity-robust standard errors
+    - Create a worksheet “Single Regressor OLS” in the Excel spreadsheet including the following for each of the above tests:
+      - Calculated value of	t-statistic for	each parameter
+      - P-value for	each parameter
+      - Estimated	coefficient	and	standard error for each	parameter
+      - R-squared	and	adjusted R-squared (if given)
+      - P-value for F Test (if given)
 
 *4. Basic Linear: Multiple Variable Regression in R*
-
+  - Run multivariable OLS on Income:
+    - Add father’s education, sex, and race – make sure to use the dummy variables you created for Sex and Race
+    ![]()
+      - Using homoskedasticity-only standard errors
+      - Using heteroskedasticity robust SE
+    
 
 *5. Various Functional Forms: Multiple Variable Regression in R*
