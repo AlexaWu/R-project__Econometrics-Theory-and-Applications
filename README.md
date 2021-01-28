@@ -43,3 +43,8 @@
 3. Market Index Price Data
 4. Computing Monthly Log Returns
 5. Analysis of Monthly Log Returns
+
+### Project 4: Analysis of Financial Data (Part	2)
+
+1. Linear Model Analysis of Vanguard Total Stock Market Index Fund
+2. Modeling Volatility for Amazon, Inc.
