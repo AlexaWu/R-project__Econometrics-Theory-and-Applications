@@ -1,16 +1,25 @@
 ## Project Contents
 
-**_1. Downloading Data_**
+**_1. Stock Price Data_**
+
 
   
-**_2. Data Manipulation in Excel_**
+**_2. Daily Log Returns for Stock Data_**
+
 
   
-**_3. Data Analysis re: Income_**
+**_3. Market Index Price Data_**
+
 
   
-**_4. Data Analysis re: Income and AFQT_**
+**_4. Computing Monthly Log Returns_**
 
-  
+
+
+**_5. Analysis of Monthly Log Returns_**
+
+
+
+
   
 ## R Code and Output
