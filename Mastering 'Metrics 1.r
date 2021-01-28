@@ -1,6 +1,8 @@
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
 > setwd('C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/A&P')
+
+#Import	Dataset
 > ExportM1=read.csv("ExportM1.csv")
 > attach(ExportM1)
 > names(ExportM1)
