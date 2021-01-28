@@ -1,10 +1,10 @@
 ## Project Contents
 
-**1. Downloading Data**
+*1. Downloading Data*
   - Select BSL Longitudinal Survey Data https://www.nlsinfo.org/investigator/pages/login.jsp
   - Download and Save Dataset
   
-**2. Data Manipulation in Excel**
+*2. Data Manipulation in Excel*
   - Apply the data filters
   - Remove all observations that do not satisfy the filters
   - Add series of dummy variables for race and gender
@@ -13,11 +13,11 @@
   - Save worksheet as an Excel file - [Dataset1.xls](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Dataset1.xlsx)
   - Save worksheet as a text or CSV file - Dataset1
   
-**3. Data Analysis re: Income**
+*3. Data Analysis re: Income*
   - Using Excel calculate the sample mean, sample standard deviation, sample skewness, sample kurtosis
   - Using R calculate the sample mean, sample standard deviation, population skewness, population kurtosis
   
-**4. Data Analysis re: Income and AFQT**
+*4. Data Analysis re: Income and AFQT*
   - Using Excel calculate the sample covariance, sample correlation coefficient
   - Using R calculate the sample covariance, sample correlation coefficient
   
