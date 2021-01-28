@@ -23,7 +23,7 @@
 
 ### :computer: Project 1: Assessing Income and Education Using BLS Data
 
-[Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
+[Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
 
 > Sponsored by the Bureau of Labor Statistics, the National Longitudinal Surveys (NLS) are a family of surveys dedicated to tracking the labor market and other life experiences of American men and women.
 
@@ -32,7 +32,7 @@
 3. Data Analysis re: Income
 4. Data Analysis re: Income and AFQT
 
-[Part 2](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
+[Part 2](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
 
 1. Data Manipulation in R
 2. Hypothesis Testing in R
@@ -42,7 +42,7 @@
 
 ### :computer: Project 2: Analysis of Financial Data 
 
-[Part 1]()
+[Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-1:%20Analysis%20of%20Financial%20Data.md)
 
 1. Stock Price Data
 2. Daily Log Returns for Stock Data
