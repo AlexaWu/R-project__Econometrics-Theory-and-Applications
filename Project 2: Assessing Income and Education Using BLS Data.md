@@ -61,7 +61,7 @@
 ## R Code and Output
 
 PART I Data Manipulation
-```{r setup}
+```javascript
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
 > setwd("C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/Metrics1")
