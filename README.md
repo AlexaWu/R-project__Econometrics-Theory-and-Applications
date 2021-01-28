@@ -23,9 +23,9 @@
 
 ### :computer: Project 1: Assessing Income and Education Using BLS Data
 
-[Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
+> Dataset: Sponsored by the Bureau of Labor Statistics, the National Longitudinal Surveys (NLS) are a family of surveys dedicated to tracking the labor market and other life experiences of American men and women.
 
-> Sponsored by the Bureau of Labor Statistics, the National Longitudinal Surveys (NLS) are a family of surveys dedicated to tracking the labor market and other life experiences of American men and women.
+[Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md)
 
 1. Downloading Data
 2. Data Manipulation in Excel
