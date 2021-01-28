@@ -34,6 +34,7 @@
 [1] 0.6918535
 
 #Calculate population skewness
+```{r}
 > install.packages("moments")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -51,15 +52,18 @@ The downloaded binary packages are in
 [1] -0.5884398
 > kurtosis(Grade)
 [1] 2.970073
+```
 
 #Import Dataset
+```{r}
 > ExportM2=read.csv("ExportM2.csv")
 > attach(ExportM2)
 > names(ExportM2)
 [1] "Grade_D0" "Grade_D1"
+```
 
 #T Test NOT assuming equal variance (i.e. unpooled)
-```javascript
+```{r}
 > t.test(Grade_D0,Grade_D1,var.equal=FALSE,paired=FALSE)
 
         Welch Two Sample t-test
