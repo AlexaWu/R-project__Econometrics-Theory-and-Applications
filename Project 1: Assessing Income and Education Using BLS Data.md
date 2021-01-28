@@ -9,7 +9,7 @@
   - Add series of dummy variables for race and gender
   - Add the natural log of income as a variable and name it ln_income
   - Add a dummy variable for income greater than or equal to $60,000
-  - Save worksheet as an Excel file - Dataset1.xls
+  - Save worksheet as an Excel file - [Dataset1.xls](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Dataset1%20ZINC.xlsx)
   - Save worksheet as a text or CSV file - Dataset1
 3. Data Analysis re: Income
   - Using Excel calculate the sample mean, sample standard deviation, sample skewness, sample kurtosis
