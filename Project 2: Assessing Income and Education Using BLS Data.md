@@ -2,7 +2,7 @@
 
 **_1. Data Manipulation in R_**
   - Based on [Dataset1.xml](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Dataset1.xlsx) - notice that some observations involve top-coded income (where any income >= $300,000 is shown as exactly $300,000)
-  - Remove those observations and reattach data
+  - Remove those observations and reattach data [Dataset2.xml](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Dataset2.xlsx)
 
 **_2. Hypothesis Testing in R_**
   - Test the null hypothesis that in 2012 the average income of BLS79 responders equaled $40,000
