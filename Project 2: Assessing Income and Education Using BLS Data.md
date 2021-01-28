@@ -1,10 +1,10 @@
 ## Project Contents
 
-*1. Data Manipulation in R*
+**_1. Data Manipulation in R_**
   - Based on [Dataset1.xml](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Dataset1.xlsx) - notice that some observations involve top-coded income (where any income >= $300,000 is shown as exactly $300,000)
   - Remove those observations and reattach data
 
-*2. Hypothesis Testing in R*
+**_2. Hypothesis Testing in R_**
   - Test the null hypothesis that in 2012 the average income of BLS79 responders equaled $40,000
   - Test the null hypothesis that in 2012 the average income of BLS79 responders equaled $45,000
   - Test the null hypothesis that in 2012 the average income of BLS79 responders equaled $50,000
@@ -13,7 +13,7 @@
     - P-value
     - 99% Confidence interva
 
-*3. Single Variable Regression Analysis in R*
+**_3. Single Variable Regression Analysis in R_**
   - Run OLS with one Regressor on Income: 
   ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/OLS%20with%20one%20Regressor%20on%20Income.jpg)
     - Using homoskedasticity-only standard errors
@@ -25,7 +25,7 @@
       - R-squared and adjusted R-squared (if given)
       - P-value for F Test (if given)
 
-*4. Basic Linear: Multiple Variable Regression in R*
+**_4. Basic Linear: Multiple Variable Regression in R_**
   - Run multivariable OLS on Income:
     - Add father’s education, sex, and race use dummy variables: ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/multivariable%20OLS%20on%20Income.jpg)
       - Using homoskedasticity-only standard errors
@@ -41,7 +41,7 @@
       - R-squared and adjusted R-squared (if given)
       - P-value for F Test (if given)
     
-*5. Various Functional Forms: Multiple Variable Regression in R*
+**_5. Various Functional Forms: Multiple Variable Regression in R_**
   - Run multiple variable OLS on natural log of Income: ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/multiple%20variable%20OLS%20on%20natural%20log%20of%20Income.jpg)
     - Using homoskedasticity-only standard errors
     - Using heteroskedasticity-robust standard errors
@@ -60,7 +60,7 @@
 
 ## R Code and Output
 
-> #PART I
+PART I
 ```javascript
 > getwd()
 [1] "C:/Users/sonal/OneDrive/Documents"
@@ -82,7 +82,7 @@ The following objects are masked from Dataset1:
     ln_income, race, sex
 ```
 
-> #PART II A
+PART II A
 ```javascript
 > #T-testreincome
 > attach(Dataset2)
@@ -123,7 +123,7 @@ mean of x
 50108.22
 ```
 
-> #PART II B
+PART II B
 ```javascript
 > t.test(income,mu=45000)
 
@@ -152,7 +152,7 @@ mean of x
 50108.22
 ```
 
-> #PART II C
+PART II C
 ```javascript
 > t.test(income,mu=50000)
 
@@ -194,7 +194,7 @@ mean of x
 50108.22
 ```
 
-> #PART III 
+PART III 
 ```javascript
 > summary(lm(income~education, data=Dataset2))
 
@@ -308,7 +308,7 @@ dummy_race   -4392.51     967.12  -4.5418 5.738e-06 ***
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-> #PART IV
+PART IV
 ```javascript
 > ols3 <- lm(income ~ education + father_ed + dummy_sex + dummy_race + afqt, data=Dataset2)
 > summary(ols3)
@@ -356,7 +356,7 @@ afqt         2.2247e-01  2.1973e-02  10.1250 < 2.2e-16 ***
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-> #PART V A
+PART V A
 ```javascript
 > ols1 <- lm(ln_income ~ education + father_ed + dummy_sex + dummy_race + afqt, data= Dataset2)
 > 
@@ -406,7 +406,7 @@ afqt         4.9567e-06  5.0342e-07   9.8461   <2e-16 ***
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-> #PART V B
+PART V B
 ```javascript
 > model1 <- glm(formula= dummy_income ~ education + father_ed + dummy_sex + dummy_race + afqt, family= binomial(link="logit"),data=Dataset2)
 > 
