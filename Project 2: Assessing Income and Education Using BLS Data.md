@@ -51,4 +51,9 @@
       - Estimated coefficient and standard error for each parameter
       - R-squared and adjusted R-squared (if given)
       - P-value for F Test (if given)
-  - Run multiple variable logit regression: ![]()
+  - Run multiple variable logit regression: ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/multiple%20variable%20logit%20regression.jpg)
+    - Assuming homoskedasticity-only standard errors
+    - Create a worksheet “Logits” in the Excel spreadsheet including the following for each of the above tests:
+      - Calculated value of z-statistic for each parameter
+      - P-value for each parameter
+      - Estimated coefficient and standard error for each parameter
