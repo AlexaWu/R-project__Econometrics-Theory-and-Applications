@@ -8,7 +8,7 @@
   - Test the null hypothesis that in 2012 the average income of BLS79 responders equaled $40,000
   - Test the null hypothesis that in 2012 the average income of BLS79 responders equaled $45,000
   - Test the null hypothesis that in 2012 the average income of BLS79 responders equaled $50,000
-  - Create a worksheet “Hypothesis Testing” in the Excel spreadsheet including the following for each of the above tests:
+  - Create a worksheet “`Hypothesis Testing`” in the Excel spreadsheet including the following for each of the above tests:
     - Calculated value of t
     - P-value
     - 99% Confidence interva
@@ -18,7 +18,7 @@
   ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/OLS%20with%20one%20Regressor%20on%20Income.jpg)
     - Using homoskedasticity-only standard errors
     - Using heteroskedasticity-robust standard errors
-    - Create a worksheet “Single Regressor OLS” in the Excel spreadsheet including the following for each of the above tests:
+    - Create a worksheet “`Single Regressor OLS`” in the Excel spreadsheet including the following for each of the above tests:
       - Calculated value of t-statistic for each parameter
       - P-value for each parameter
       - Estimated coefficient and standard error for each parameter
@@ -34,7 +34,7 @@
     ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/add%20AFQT%20score.jpg)
       - Using homoskedasticity-only standard errors
       - Using heteroskedasticity robust SE    
-    - Create a worksheet “Multivariate OLS” in the Excel spreadsheet including the following for each of the above tests:
+    - Create a worksheet “`Multivariate OLS`” in the Excel spreadsheet including the following for each of the above tests:
       - Calculated value of t-statistic for each parameter
       - P-value for each parameter
       - Estimated coefficient and standard error for each parameter
@@ -45,7 +45,7 @@
   - Run multiple variable OLS on natural log of Income: ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/multiple%20variable%20OLS%20on%20natural%20log%20of%20Income.jpg)
     - Using homoskedasticity-only standard errors
     - Using heteroskedasticity-robust standard errors
-    - Create a worksheet “Multivatiate Log-Linear” in the Excel spreadsheet including the following for each of the above tests:
+    - Create a worksheet “`Multivatiate Log-Linear`” in the Excel spreadsheet including the following for each of the above tests:
       - Calculated value of t-statistic for each parameter
       - P-value for each parameter
       - Estimated coefficient and standard error for each parameter
@@ -53,7 +53,7 @@
       - P-value for F Test (if given)
   - Run multiple variable logit regression: ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/multiple%20variable%20logit%20regression.jpg)
     - Assuming homoskedasticity-only standard errors
-    - Create a worksheet “Logits” in the Excel spreadsheet including the following for each of the above tests:
+    - Create a worksheet “`Logits`” in the Excel spreadsheet including the following for each of the above tests:
       - Calculated value of z-statistic for each parameter
       - P-value for each parameter
       - Estimated coefficient and standard error for each parameter
