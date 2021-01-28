@@ -32,7 +32,7 @@
       - Using homoskedasticity-only standard errors
       - Using heteroskedasticity robust SE
     - Add	AFQT	Score	to	previous	specification:
-    ![]()
+    ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/add%20AFQT%20score.jpg)
 
     
 
