@@ -19,10 +19,10 @@
     - Using homoskedasticity-only standard errors
     - Using heteroskedasticity-robust standard errors
     - Create a worksheet “Single Regressor OLS” in the Excel spreadsheet including the following for each of the above tests:
-      - Calculated value of	t-statistic for	each parameter
-      - P-value for	each parameter
-      - Estimated	coefficient	and	standard error for each	parameter
-      - R-squared	and	adjusted R-squared (if given)
+      - Calculated value of t-statistic for each parameter
+      - P-value for each parameter
+      - Estimated coefficient and standard error for each parameter
+      - R-squared and adjusted R-squared (if given)
       - P-value for F Test (if given)
 
 *4. Basic Linear: Multiple Variable Regression in R*
@@ -36,11 +36,20 @@
       - Using homoskedasticity-only standard errors
       - Using heteroskedasticity robust SE    
     - Create a worksheet “Multivariate OLS” in the Excel spreadsheet including the following for each of the above tests:
-      - Calculated value of	t-statistic for	each parameter
-      - P-value for	each parameter
-      - Estimated	coefficient	and	standard error for each	parameter
-      - R-squared	and	adjusted R-squared (if given)
+      - Calculated value of t-statistic for each parameter
+      - P-value for each parameter
+      - Estimated coefficient and standard error for each parameter
+      - R-squared and adjusted R-squared (if given)
       - P-value for F Test (if given)
     
 *5. Various Functional Forms: Multiple Variable Regression in R*
-  - Run multiple variable OLS on natural log of Income: ![]()
+  - Run multiple variable OLS on natural log of Income: ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/multiple%20variable%20OLS%20on%20natural%20log%20of%20Income.jpg)
+    - Using homoskedasticity-only standard errors
+    - Using heteroskedasticity-robust standard errors
+    - Create a worksheet “Multivatiate Log-Linear” in the Excel spreadsheet including the following for each of the above tests:
+      - Calculated value of t-statistic for each parameter
+      - P-value for each parameter
+      - Estimated coefficient and standard error for each parameter
+      - R-squared and adjusted R-squared (if given)
+      - P-value for F Test (if given)
+  - Run multiple variable logit regression: ![]()
