@@ -63,9 +63,9 @@
 PART I
 ```javascript
 > getwd()
-[1] "C:/Users/sonal/OneDrive/Documents"
-> setwd("C:/Users/sonal/Desktop")
-> Dataset1 = read.csv("Dataset1.csv")
+[1] "C:/Users/Alexa~Chutian/Documents"
+> setwd("C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/Metrics1")
+> Dataset1=read.csv("Dataset1.csv")
 > attach(Dataset1)
 > names(Dataset1)
  [1] "id"           "father_ed"    "race"         "sex"          "afqt"         "income"      
