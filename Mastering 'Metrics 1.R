@@ -34,7 +34,6 @@
 [1] 0.6918535
 
 #Calculate population skewness
-```{r}
 > install.packages("moments")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -52,18 +51,14 @@ The downloaded binary packages are in
 [1] -0.5884398
 > kurtosis(Grade)
 [1] 2.970073
-```
 
 #Import Dataset
-```{r}
 > ExportM2=read.csv("ExportM2.csv")
 > attach(ExportM2)
 > names(ExportM2)
 [1] "Grade_D0" "Grade_D1"
-```
 
 #T Test NOT assuming equal variance (i.e. unpooled)
-```{r}
 > t.test(Grade_D0,Grade_D1,var.equal=FALSE,paired=FALSE)
 
         Welch Two Sample t-test
@@ -76,10 +71,8 @@ alternative hypothesis: true difference in means is not equal to 0
 sample estimates:
 mean of x mean of y 
  73.14286  83.76190 
-```
 
 #T Test assuming equal variance (i.e. pooled)
-```{r}
 > t.test(Grade_D0,Grade_D1,var.equal=TRUE,paired=FALSE)
 
         Two Sample t-test
@@ -92,4 +85,3 @@ alternative hypothesis: true difference in means is not equal to 0
 sample estimates:
 mean of x mean of y 
  73.14286  83.76190 
-```
