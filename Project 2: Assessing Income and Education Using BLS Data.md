@@ -15,7 +15,7 @@
 
 *3. Single Variable Regression Analysis in R*
   - Run OLS with one Regressor on Income: 
-  ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/OLS%20with%20one%20Regressor%20on%20Income.jpg)
+  ![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/OLS%20with%20one%20Regressor%20on%20Income.jpg)
     - Using homoskedasticity-only standard errors
     - Using heteroskedasticity-robust standard errors
     - Create a worksheet “Single Regressor OLS” in the Excel spreadsheet including the following for each of the above tests:
