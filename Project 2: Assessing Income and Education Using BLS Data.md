@@ -15,6 +15,7 @@
 
 *3. Single Variable Regression Analysis in R*
   - Run OLS with one Regressor on Income: Incomei =	Bo + B1(Educationi) + ui
+  ![]()
     - Using homoskedasticity-only standard errors
 
 *4. Basic Linear: Multiple Variable Regression in R*
