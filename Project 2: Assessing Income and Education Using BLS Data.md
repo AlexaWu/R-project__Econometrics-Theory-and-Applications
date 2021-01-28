@@ -60,7 +60,7 @@
 
 ## R Code and Output
 
-PART I
+PART I Data Manipulation
 ```javascript
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
@@ -82,7 +82,7 @@ The following objects are masked from Dataset1:
     ln_income, race, sex
 ```
 
-PART II A
+PART II A Hypothesis Testing
 ```javascript
 > #T-testreincome
 > attach(Dataset2)
@@ -123,7 +123,7 @@ mean of x
 50108.22
 ```
 
-PART II B
+PART II B Hypothesis Testing
 ```javascript
 > t.test(income,mu=45000)
 
@@ -152,7 +152,7 @@ mean of x
 50108.22
 ```
 
-PART II C
+PART II C Hypothesis Testing
 ```javascript
 > t.test(income,mu=50000)
 
@@ -194,7 +194,7 @@ mean of x
 50108.22
 ```
 
-PART III 
+PART III Single Variable Regression Analysis
 ```javascript
 > summary(lm(income~education, data=Dataset2))
 
@@ -308,7 +308,7 @@ dummy_race   -4392.51     967.12  -4.5418 5.738e-06 ***
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-PART IV
+PART IV Basic Linear: Multiple Variable Regression
 ```javascript
 > ols3 <- lm(income ~ education + father_ed + dummy_sex + dummy_race + afqt, data=Dataset2)
 > summary(ols3)
@@ -356,7 +356,7 @@ afqt         2.2247e-01  2.1973e-02  10.1250 < 2.2e-16 ***
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-PART V A
+PART V A Various Functional Forms: Multiple Variable Regression
 ```javascript
 > ols1 <- lm(ln_income ~ education + father_ed + dummy_sex + dummy_race + afqt, data= Dataset2)
 > 
@@ -406,7 +406,7 @@ afqt         4.9567e-06  5.0342e-07   9.8461   <2e-16 ***
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-PART V B
+PART V B Various Functional Forms: Multiple Variable Regression
 ```javascript
 > model1 <- glm(formula= dummy_income ~ education + father_ed + dummy_sex + dummy_race + afqt, family= binomial(link="logit"),data=Dataset2)
 > 
