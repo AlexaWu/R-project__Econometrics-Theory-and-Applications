@@ -39,3 +39,9 @@
 5. Various Functional Forms: Multiple Variable Regression in R
 
 ### Project 3: Analysis of Financial Data (Part	1)
+
+1. Stock Price Data
+2. Daily Log Returns for Stock Data
+3. Market Index Price Data
+4. Computing Monthly Log Returns
+5. Analysis of Monthly Log Returns
