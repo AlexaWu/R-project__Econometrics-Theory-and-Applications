@@ -4,7 +4,7 @@
 # Daily data
 
 #setting working directory
-> setwd('C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/A&P')
+> setwd('C:/#Baruch/Econometrics/Financial Data')
 
 #Install packages required to import financial data via open sources
 > install.packages("TTR")
