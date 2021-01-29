@@ -26,7 +26,7 @@
 ```javascript
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
-> setwd("C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/Metrics1")
+> setwd("C:/#Baruch/Econometrics/Projects")
 > Dataset1=read.csv("Dataset1.csv")
 > attach(Dataset1)
 > names(Dataset1)
