@@ -25,9 +25,9 @@
 ## R Code and Output
 Part I	
 ```javascript
-> getwd()	
-[1] "/Users/katycheng"	
-> setwd("Desktop")	
+> getwd()
+[1] "C:/Users/Alexa~Chutian/Documents"
+> setwd("C:/#Baruch/Econometrics/Projects")
 > install.packages("TTR")	
 --- Please select a CRAN mirror for use in this session ---	
 trying URL 'https://cran.cnr.berkeley.edu/bin/macosx/mavericks/contrib/3.3/TTR_0.23-1.tgz'	
