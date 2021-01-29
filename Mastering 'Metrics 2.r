@@ -1,6 +1,6 @@
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
-> setwd('C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/A&P')
+> setwd('C:/#Baruch/Econometrics/A&P')
 
 # Single Variable OLS
 
