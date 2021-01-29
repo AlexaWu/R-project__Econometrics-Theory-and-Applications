@@ -103,9 +103,10 @@ Learn from a quantmod author: https://www.datacamp.com/courses/importing-and-man
 > require(TTR) 	
 > saveChart('pdf', width=13)	
 > write.table(AMZN, "AMZN.txt", sep='\t', col.names = NA)	
-	
+```
 	
 Part II	
+```javascript
 > AMZN.Close.rtn=diff(log(AMZN$AMZN.Close))	
 > head(AMZN.Close.rtn)	
               AMZN.Close	
@@ -242,9 +243,10 @@ Description:
 Warning message:	
 In if (class(x) == "fREG") x = residuals(x) :	
   the condition has length > 1 and only the first element will be used	
+```
 	
-	
-Part III	
+Part III
+```javascript
 > getSymbols("VTSMX", from="2008-01-01", to="2015-12-31")	
 [1] "VTSMX"	
 > head(VTSMX)	
@@ -280,9 +282,10 @@ Part III
 > dim(VTSMX)	
 [1] 2015    6	
 > write.table(VTSMX, "VTSMX.txt", sep='\t', col.names = NA)	
-	
+```
 	
 Part IV	
+```javascript
 > VTSMX.mo.rtn <- periodReturn(VTSMX, period='monthly', type='log', leading='True')	
 > AMZN.mo.rtn <- periodReturn(AMZN, period='monthly', type='log', leading='True')	
 > dim(AMZN.mo.rtn)	
@@ -346,9 +349,10 @@ Part IV
 > dim(monthly)	
 [1] 96  2	
 > write.table(monthly, "monthly.txt", sep='\t', col.names = NA)	
-	
+```
 	
 Part V	
+```javascript
 > cor(AMZN.mo.rtn, VTSMX.mo.rtn)	
                 monthly.returns	
 monthly.returns       0.4964068	
