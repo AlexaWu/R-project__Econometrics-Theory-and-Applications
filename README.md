@@ -42,7 +42,7 @@
 
 ### :computer: Project 2: Analysis of Financial Data 
 
-> Dataset: daily stock prices for Amazon via Yahoo Finance for the period	January	1, 2008	through	December 31, 2015
+> Dataset: Daily stock prices for Amazon(AMZN) via Yahoo Finance for the period	January	1, 2008	through	December 31, 2015
 
 [Part 1](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-1:%20Analysis%20of%20Financial%20Data.md)
 
