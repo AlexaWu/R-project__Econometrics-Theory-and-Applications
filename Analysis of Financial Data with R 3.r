@@ -1,6 +1,6 @@
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
-> setwd('C:/#Baruch Finance/ECO 9723 Econometrics Theory and Applications/Replication Assignments')
+> setwd('C:/#Baruch/Econometrics/Financial Data')
 > Data1 = read.table ("Data1.txt", header=T)
 > head(Data1)
       date    ibmrtn     vwrtn     ewrtn     sprtn
