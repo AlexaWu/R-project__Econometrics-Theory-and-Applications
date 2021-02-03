@@ -51,6 +51,9 @@
 - Compute the beta for Amazon’s monthly log returns
   
 ## R Code and Output
+
+[Project 2-1.xlsx](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Project%202-1.xlsx)
+
 Part I Stock Price Data
 ```javascript
 > getwd()
