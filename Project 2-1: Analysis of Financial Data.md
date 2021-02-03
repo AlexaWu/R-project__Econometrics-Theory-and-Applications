@@ -135,7 +135,9 @@ Learn from a quantmod author: https://www.datacamp.com/courses/importing-and-man
 > saveChart('pdf', width=13)	
 > write.table(AMZN, "AMZN.txt", sep='\t', col.names = NA)	
 ```
-	
+
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Amazon%20Plot%20(Volume%20%26%20Price).pdf)
+
 Part II	Daily Log Returns for Stock Data
 ```javascript
 > AMZN.Close.rtn=diff(log(AMZN$AMZN.Close))	
@@ -381,7 +383,9 @@ Part IV	Computing Monthly Log Returns
 [1] 96  2	
 > write.table(monthly, "monthly.txt", sep='\t', col.names = NA)	
 ```
-	
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Amazon%20Plot%20(Log%20Returns).pdf)
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Vanguard%20Plot%20(Log%20Returns).pdf)
+
 Part V Analysis of Monthly Log Returns
 ```javascript
 > cor(AMZN.mo.rtn, VTSMX.mo.rtn)	
@@ -407,3 +411,4 @@ pdf
                 monthly.returns	
 monthly.returns       0.9916292	
 ```
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Combined%20Plot%20(Monthly).pdf)
