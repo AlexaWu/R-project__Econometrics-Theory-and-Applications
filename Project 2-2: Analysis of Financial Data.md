@@ -50,7 +50,7 @@ E. Build an ARCH model
 
 ## R Code and Output
 
-[Project 2-2.xlsx](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Project%202-2.xlsx)
+Explore in table: [Project 2-2.xlsx](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Project%202-2.xlsx)
 
 Part I.A Test monthly log returns for autocorrelation
 ```javascript
