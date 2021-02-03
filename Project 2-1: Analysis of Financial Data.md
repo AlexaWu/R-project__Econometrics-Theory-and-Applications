@@ -383,8 +383,8 @@ Part IV	Computing Monthly Log Returns
 [1] 96  2	
 > write.table(monthly, "monthly.txt", sep='\t', col.names = NA)	
 ```
-![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Amazon%20Plot%20(Log%20Returns).pdf)
-![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Vanguard%20Plot%20(Log%20Returns).pdf)
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Amazon%20Plot%20(Log%20Returns).jpg)
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Vanguard%20Plot%20(Log%20Returns).jpg)
 
 Part V Analysis of Monthly Log Returns
 ```javascript
