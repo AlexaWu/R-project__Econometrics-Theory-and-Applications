@@ -136,7 +136,7 @@ Learn from a quantmod author: https://www.datacamp.com/courses/importing-and-man
 > write.table(AMZN, "AMZN.txt", sep='\t', col.names = NA)	
 ```
 
-![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Amazon%20Plot%20(Volume%20%26%20Price).pdf)
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Amazon%20Plot%20(Volume%20%26%20Price).jpg)
 
 Part II	Daily Log Returns for Stock Data
 ```javascript
@@ -411,4 +411,4 @@ pdf
                 monthly.returns	
 monthly.returns       0.9916292	
 ```
-![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Combined%20Plot%20(Monthly).pdf)
+![](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/formula/Combined%20Plot%20(Monthly).jpg)
