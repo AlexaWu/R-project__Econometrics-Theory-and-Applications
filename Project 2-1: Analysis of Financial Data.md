@@ -8,7 +8,7 @@
 - Plot the daily volume and closing price – save as PDF.  
     - Background = white
     - Width = 15 
-- Export this dataset to a TXT or CSV file. Copy and paste into an Excel file – name it “Amazon” 
+- Export this dataset to a TXT or CSV file. Copy and paste into an Excel file “`Amazon`” 
 
   
 **_2. Daily Log Returns for Stock Data_**
@@ -26,7 +26,7 @@
 - Using the Quantmod package – download daily index prices for the Vanguard Total Stock Market Index Fund via Yahoo Finance for the period January 1, 2008 through December 31, 2015. 
 - Provide dimensions for this matrix.
 - Provide the first and last 6 rows of this matrix.
-- Export this dataset to a TXT or CSV file.  Copy and paste into an Excel file – name it “Vanguard”
+- Export this dataset to a TXT or CSV file.  Copy and paste into an Excel file “`Vanguard`”
 
 **_4. Computing Monthly Log Returns_**
 
@@ -38,11 +38,11 @@
     - Produce a histogram of this data using 20 buckets; save as PDF
     - Provide the first 6 observations
     - Provide the last 6 observations
-- Combine monthly log returns for Amazon and Vanguard Total Stock Market Index Fund into same data frame – name it “Monthly”
+- Combine monthly log returns for Amazon and Vanguard Total Stock Market Index Fund into same data frame
     - Provide dimensions for this matrix.
     - Provide the first 6 observations
     - Provide the last 6 observations
-- Export this dataset to a TXT or CSV file.  Copy and paste into an Excel file – name it “Monthly” 
+- Export this dataset to a TXT or CSV file. Copy and paste into an Excel file “`Combined Dataset (Monthly)`” 
 
 **_5. Analysis of Monthly Log Returns_**
 
