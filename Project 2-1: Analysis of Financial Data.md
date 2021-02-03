@@ -6,8 +6,8 @@ a. Using the Quantmod package – download daily stock prices for Amazon via Yah
 b. Provide dimensions for this matrix.\
 c. Provide the first and last 6 rows of this matrix.\
 d. Plot the daily volume and closing price – save as PDF.  \
-	i. Background = white\
-	ii. Width = 15 \
+    - Background = white\
+    - Width = 15 \
 e. Export this dataset to a TXT or CSV file. Copy and paste into an Excel file – name it “Amazon” 
 
   
