@@ -2,28 +2,56 @@
 
 **_1. Stock Price Data_**
 
+a. Using the Quantmod package – download daily stock prices for Amazon via Yahoo Finance for the period January 1, 2008 through December 31, 2015. \
+b. Provide dimensions for this matrix.\
+c. Provide the first and last 6 rows of this matrix.\
+d. Plot the daily volume and closing price – save as PDF.  \
+	i. Background = white\
+	ii. Width = 15 \
+e. Export this dataset to a TXT or CSV file. Copy and paste into an Excel file – name it “Amazon” 
 
   
 **_2. Daily Log Returns for Stock Data_**
 
+a. Compute log returns for Amazon’s daily stock price (closing price adjusted for splits and dividends).\
+	i. Provide the first 6 observations\
+	ii. Provide the last 6 observations\
+b. Calculate mean, median, variance, standard deviation, skewness, and excess kurtosis.\
+c. Conduct skewness test (i.e. test null hypothesis that skewness = 0)\
+d. Conduct kurtosis test (i.e. test null hypothesis that excess kurtosis = 0)\
+e. Conduct Jarque-Bera Normality Test
 
-  
 **_3. Market Index Price Data_**
 
+a. Using the Quantmod package – download daily index prices for the Vanguard Total Stock Market Index Fund via Yahoo Finance for the period January 1, 2008 through December 31, 2015. \
+b. Provide dimensions for this matrix.\
+c. Provide the first and last 6 rows of this matrix.\
+d. Export this dataset to a TXT or CSV file.  Copy and paste into an Excel file – name it “Vanguard”
 
-  
 **_4. Computing Monthly Log Returns_**
 
-
+a. Using the Period Return function in Quantmod, compute the monthly log returns of Amazon closing stock price \
+	i. Produce a histogram of this data using 20 buckets; save as PDF\
+	ii. Provide the first 6 observations\
+	iii. Provide the last 6 observations\
+b. Using the Period Return function in Quantmod, compute the monthly log returns of the Vanguard Total Stock Market Index Fund closing price\
+	i. Produce a histogram of this data using 20 buckets; save as PDF\
+	ii. Provide the first 6 observations\
+	iii. Provide the last 6 observations\
+c. Combine monthly log returns for Amazon and Vanguard Total Stock Market Index Fund into same data frame – name it “Monthly”\
+	i. Provide dimensions for this matrix.\
+	ii. Provide the first 6 observations\
+	iii. Provide the last 6 observations\
+d. Export this dataset to a TXT or CSV file.  Copy and paste into an Excel file – name it “Monthly” 
 
 **_5. Analysis of Monthly Log Returns_**
 
-
-
-
+a. Compute Pearson’s correlation coefficient between Amazon and Vanguard monthly log returns
+b. Produce a scatterplot of Amazon and Vanguard monthly log returns; save as PDF.
+c. Compute the beta for Amazon’s monthly log returns
   
 ## R Code and Output
-Part I	
+Part I Stock Price Data
 ```javascript
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
@@ -105,7 +133,7 @@ Learn from a quantmod author: https://www.datacamp.com/courses/importing-and-man
 > write.table(AMZN, "AMZN.txt", sep='\t', col.names = NA)	
 ```
 	
-Part II	
+Part II	Daily Log Returns for Stock Data
 ```javascript
 > AMZN.Close.rtn=diff(log(AMZN$AMZN.Close))	
 > head(AMZN.Close.rtn)	
@@ -245,7 +273,7 @@ In if (class(x) == "fREG") x = residuals(x) :
   the condition has length > 1 and only the first element will be used	
 ```
 	
-Part III
+Part III Market Index Price Data
 ```javascript
 > getSymbols("VTSMX", from="2008-01-01", to="2015-12-31")	
 [1] "VTSMX"	
@@ -284,7 +312,7 @@ Part III
 > write.table(VTSMX, "VTSMX.txt", sep='\t', col.names = NA)	
 ```
 	
-Part IV	
+Part IV	Computing Monthly Log Returns
 ```javascript
 > VTSMX.mo.rtn <- periodReturn(VTSMX, period='monthly', type='log', leading='True')	
 > AMZN.mo.rtn <- periodReturn(AMZN, period='monthly', type='log', leading='True')	
@@ -351,7 +379,7 @@ Part IV
 > write.table(monthly, "monthly.txt", sep='\t', col.names = NA)	
 ```
 	
-Part V	
+Part V Analysis of Monthly Log Returns
 ```javascript
 > cor(AMZN.mo.rtn, VTSMX.mo.rtn)	
                 monthly.returns	
