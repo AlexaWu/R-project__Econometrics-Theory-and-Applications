@@ -53,7 +53,7 @@
 4. Computing Monthly Log Returns
 5. Analysis of Monthly Log Returns
 
-[Part 2]()
+[Part 2](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md)
 
 1. Linear Model Analysis of Vanguard Total Stock Market Index Fund
 2. Modeling Volatility for Amazon, Inc.
