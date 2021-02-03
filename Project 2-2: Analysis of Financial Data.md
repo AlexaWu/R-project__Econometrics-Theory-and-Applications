@@ -1,6 +1,6 @@
 ## Project Contents
 
->For all analysis use the monthly log returns for the period 1/1/08 – 12/31/15, and use 5% level when determining significance
+>use 5% level when determining significance
 
 **_1. Linear Model Analysis of Vanguard Total Stock Market Index Fund_**
 
