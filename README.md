@@ -8,7 +8,7 @@
 
 ### Mastering ‘Metrics: The Path From Cause To Effect
 
-[Part 1: Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Mastering%20'Metrics%201.r)\
+[Part 1: Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
 [Part 2: Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Mastering%20'Metrics%202.r): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
 [Part 3: Instrumental Variables](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Mastering%20'Metrics%203.r): Stage 1&2 of 2SLS (no SE Adjustment), Direct IV Regression (with SE Adjustment)\
 [Part 4: Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Mastering%20'Metrics%204.r): AR	Models, Regression Discontinuity Designs\
