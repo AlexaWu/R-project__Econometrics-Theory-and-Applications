@@ -1,10 +1,21 @@
+```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
 > setwd('C:/#Baruch/Econometrics/A&P')
+```
+
+## Stage 1 of 2SLS (no SE Adjustment)
+
+#### Import Dataset
+```r
 > ExportM10 = read.csv ("ExportM10.csv") 
 > attach(ExportM10)
 > names(ExportM10)
 [1] "ï..Student" "Grade"      "Hours"      "Flood"     
+```
+
+#### OLS Regression without IV
+```r
 > summary (lm(Grade ~ Hours, data=ExportM10))
 
 Call:
@@ -24,7 +35,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 7.367 on 47 degrees of freedom
 Multiple R-squared:  0.4787,    Adjusted R-squared:  0.4676 
 F-statistic: 43.15 on 1 and 47 DF,  p-value: 3.687e-08
+```
 
+#### Stage 1 of 2SLS using standard OLS
+```r
 > summary (lm(Hours ~ Flood, data=ExportM10))
 
 Call:
@@ -44,7 +58,12 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 1.924 on 47 degrees of freedom
 Multiple R-squared:  0.1889,    Adjusted R-squared:  0.1716 
 F-statistic: 10.94 on 1 and 47 DF,  p-value: 0.001806
+```
 
+## Stage 2 of 2SLS (no SE Adjustment)
+
+#### Import Dataset
+```r
 > ExportM11 = read.csv ("ExportM11.csv") 
 > attach(ExportM11)
 The following objects are masked from ExportM10:
@@ -53,6 +72,10 @@ The following objects are masked from ExportM10:
 
 > names(ExportM11)
 [1] "ï..Student" "Grade"      "Pred_Hours" "Hours"      "Flood"     
+```
+
+#### Stage 2 of 2SLS using standard OLS
+```r
 > summary (lm(Grade ~ Pred_Hours, data=ExportM11))
 
 Call:
@@ -72,7 +95,12 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 9.617 on 47 degrees of freedom
 Multiple R-squared:  0.1114,    Adjusted R-squared:  0.09252 
 F-statistic: 5.894 on 1 and 47 DF,  p-value: 0.01908
+```
 
+## Direct IV Regression (with SE Adjustment)
+
+#### Import Dataset
+```r
 > ExportM11 = read.csv ("ExportM11.csv") 
 > attach(ExportM11)
 The following objects are masked from ExportM11 (pos = 3):
@@ -85,6 +113,10 @@ The following objects are masked from ExportM10:
 
 > names(ExportM11)
 [1] "ï..Student" "Grade"      "Pred_Hours" "Hours"      "Flood"     
+```
+
+#### Install package
+```r
 > install.packages("AER") 
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -173,6 +205,10 @@ Warning messages:
 3: package ‘lmtest’ was built under R version 3.3.3 
 4: package ‘zoo’ was built under R version 3.3.3 
 5: package ‘sandwich’ was built under R version 3.3.3 
+```
+
+#### Direct IV Regression
+```r
 > ivmodel = ivreg(Grade ~ Hours | Flood, data=ExportM11) 
 > summary(ivmodel)
 
@@ -193,5 +229,4 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 7.408 on 47 degrees of freedom
 Multiple R-Squared: 0.4729,     Adjusted R-squared: 0.4616 
 Wald test: 9.935 on 1 and 47 DF,  p-value: 0.002823 
-
-> 
+```
