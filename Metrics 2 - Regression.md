@@ -2,15 +2,15 @@
 [1] "C:/Users/Alexa~Chutian/Documents"
 > setwd('C:/#Baruch/Econometrics/A&P')
 
-# Single Variable OLS
+## Single Variable OLS
 
-#Import Dataset
+#### Import Dataset
 > ExportM3=read.csv("ExportM3.csv")
 > attach(ExportM3)
 > names(ExportM3)
 [1] "ID"    "Hours" "Grade"
 
-#Single Variable OLS Regression	
+#### Single Variable OLS Regression	
 > summary(lm(Grade~Hours,data=ExportM3))
 
 Call:
@@ -31,9 +31,9 @@ Residual standard error: 7.367 on 47 degrees of freedom
 Multiple R-squared:  0.4787,    Adjusted R-squared:  0.4676 
 F-statistic: 43.15 on 1 and 47 DF,  p-value: 3.687e-08
 
-# Multiple Variable OLS
+## Multiple Variable OLS
 
-#Import Dataset
+#### Import Dataset
 > ExportM4=read.csv("ExportM4.csv")
 > attach(ExportM4)
 The following objects are masked from ExportM3:
@@ -43,7 +43,7 @@ The following objects are masked from ExportM3:
 > names(ExportM4)
 [1] "Student" "Hours"   "Grade"   "Male"    "Econ"    "SAT"    
 
-#Multiple Variable OLS Regression
+#### Multiple Variable OLS Regression
 > ols1<-lm(Grade~Hours+Male+Econ+SAT,data=ExportM4)
 > summary(ols1)
 
@@ -68,7 +68,7 @@ Residual standard error: 5.663 on 44 degrees of freedom
 Multiple R-squared:  0.7116,    Adjusted R-squared:  0.6854 
 F-statistic: 27.14 on 4 and 44 DF,  p-value: 2.191e-11
 
-#White-corrected standard errors
+#### White-corrected standard errors
 > install.packages("sandwich")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -88,7 +88,7 @@ package ‘sandwich’ was built under R version 3.3.3
  (Intercept)        Hours         Male         Econ          SAT 
 12.071204516  0.405371356  1.895368359  1.925507628  0.009047153 
 
-#Recalc t-stats using heteroskedastic-robust standard errors
+#### Recalc t-stats using heteroskedastic-robust standard errors
 > install.packages("lmtest")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -125,9 +125,9 @@ SAT          0.0263145  0.0090472  2.9086 0.0056719 **
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-# Multicollinearity
+## Multicollinearity
 
-#Import Dataset
+#### Import Dataset
 > ExportM5=read.csv("ExportM5.csv")
 > attach(ExportM5)
 The following objects are masked from ExportM4:
@@ -143,7 +143,7 @@ The following objects are masked from ExportM3:
  [6] "Econ"       "SAT"        "Half_SAT"   "ACT"        "NJ"        
 [11] "PA"         "NY"         "CT"        
 
-#Multiple Variable OLS Regression
+#### Multiple Variable OLS Regression
 > summary(lm(Grade~Hours+Male+Econ+SAT,data=ExportM5))
 
 Call:
@@ -167,7 +167,7 @@ Residual standard error: 5.663 on 44 degrees of freedom
 Multiple R-squared:  0.7116,    Adjusted R-squared:  0.6854 
 F-statistic: 27.14 on 4 and 44 DF,  p-value: 2.191e-11
 
-#Perfect Multicollinearity & Dummy Variable Trap
+#### Perfect Multicollinearity & Dummy Variable Trap
 > summary(lm(Grade~Hours+Male+Econ+SAT+Half_SAT,data=ExportM5))
 
 Call:
@@ -192,7 +192,7 @@ Residual standard error: 5.663 on 44 degrees of freedom
 Multiple R-squared:  0.7116,    Adjusted R-squared:  0.6854 
 F-statistic: 27.14 on 4 and 44 DF,  p-value: 2.191e-11
 
-#Perfect Multicollinearity & Dummy Variable Trap
+#### Perfect Multicollinearity & Dummy Variable Trap
 > summary(lm(Grade~Hours+Male+Female+Econ+SAT,data=ExportM5))
 
 Call:
@@ -217,7 +217,7 @@ Residual standard error: 5.663 on 44 degrees of freedom
 Multiple R-squared:  0.7116,    Adjusted R-squared:  0.6854 
 F-statistic: 27.14 on 4 and 44 DF,  p-value: 2.191e-11
 
-#Perfect Multicollinearity & Dummy Variable Trap
+#### Perfect Multicollinearity & Dummy Variable Trap
 > summary(lm(Grade~Hours+Male+NJ+PA+CT+NY+Econ+SAT,data=ExportM5))
 
 Call:
@@ -246,7 +246,7 @@ Residual standard error: 5.297 on 41 degrees of freedom
 Multiple R-squared:  0.7648,    Adjusted R-squared:  0.7247 
 F-statistic: 19.05 on 7 and 41 DF,  p-value: 4.83e-11
 
-#drop a dummy
+#### drop a dummy
 > summary(lm(Grade~Hours+Male+NJ+PA+CT+Econ+SAT,data=ExportM5))
 
 Call:
@@ -274,7 +274,7 @@ Residual standard error: 5.297 on 41 degrees of freedom
 Multiple R-squared:  0.7648,    Adjusted R-squared:  0.7247 
 F-statistic: 19.05 on 7 and 41 DF,  p-value: 4.83e-11
 
-#Imperfect Multicollinearity
+#### Imperfect Multicollinearity
 > summary(lm(Grade~Hours+Male+Econ+SAT+ACT,data=ExportM5))
 
 Call:
@@ -299,7 +299,7 @@ Residual standard error: 5.676 on 43 degrees of freedom
 Multiple R-squared:  0.7168,    Adjusted R-squared:  0.6839 
 F-statistic: 21.77 on 5 and 43 DF,  p-value: 8.418e-11
 
-# Quadratics
+## Quadratics
 
 > ExportM6=read.csv("ExportM6.csv")
 > attach(ExportM6)
