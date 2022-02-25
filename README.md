@@ -4,7 +4,7 @@
 - Applied econometric methods involving panel and time series data.
 - Critiqued reported regression results in applied academic papers, and interpret the results to a variety of audiences.
 
-> This is a Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance.
+> This is a project from Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance.
 
 ### Mastering ‘Metrics: The Path From Cause To Effect
 
