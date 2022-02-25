@@ -100,7 +100,7 @@ package ‘sandwich’ was built under R version 3.3.3
 12.071204516  0.405371356  1.895368359  1.925507628  0.009047153 
 ```
 
-#### Recalc t-stats using heteroskedastic-robust standard errors\
+#### Recalc t-stats using heteroskedastic-robust standard errors
 ```r
 > install.packages("lmtest")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
