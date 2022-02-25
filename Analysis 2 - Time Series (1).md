@@ -1,12 +1,32 @@
+```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
+```
+
+## Autoregressive Models
+
+#### Set working directory
+```r
 > setwd('C:/#Baruch/Econometrics/Financial Data')
+```
+
+#### Import Dataset
+```r
 > ExportT1 = read.csv ("ExportT1.csv")
 > attach(ExportT1)
 > names(ExportT1)
 [1] "X"    "SPY"  "AAPL"
+```
+
+#### Pearson’s Correlation between Apple and S&P monthly returns
+```r
 > cor(AAPL, SPY)
 [1] 0.5737038
+```
+
+#### Examine the SPY dataset
+> Sample ACF for SPY
+```r
 > acf(SPY)
 > acf(SPY, lag=10)
 > f1=acf(SPY) 
@@ -33,34 +53,56 @@
 [17,]  0.079749803
 [18,] -0.127319250
 [19,] -0.004961150
+```
 
+#### T-Test for individual autocorrelations
+> Lag 1 is given by ACF[2]
+```r
 > t1= f1$acf[2]*sqrt(length(SPY)) 
 > t1
 [1] 2.014687
+```
+> Lag 2 is given by ACF[3]
+```r
 > t2= f1$acf[3]*sqrt(length(SPY)) 
 > t2
 [1] -0.1329892
+```
+
+#### Portmanteau Statistic for entire ACF
+> M as 12
+```r
 > Box.test(SPY, lag=12, type='Ljung')
 
         Box-Ljung test
 
 data:  SPY
 X-squared = 21.547, df = 12, p-value = 0.04292
+```
 
+> M as 24
+```r
 > Box.test(SPY, lag=24, type='Ljung')
 
         Box-Ljung test
 
 data:  SPY
 X-squared = 32.591, df = 24, p-value = 0.113
+```
 
+> M as natural log of T – which is given by “log” function in R	
+```r
 > Box.test(SPY, lag= log(length(SPY)), type='Ljung')
 
         Box-Ljung test
 
 data:  SPY
 X-squared = 11.676, df = 4.2767, p-value = 0.02442
+```
 
+#### Partial ACF for SPY
+> Dashed lines are the two standard error limits; 5% significance
+```r
 > acf(SPY, lag=12)
 > pacf(SPY, lag=12)
 > acf(SPY, lag=12, plot=FALSE) 
@@ -79,12 +121,28 @@ Partial autocorrelations of series ‘SPY’, by lag
  0.237 -0.076  0.208  0.175 -0.131 -0.264 -0.031  0.109 -0.077  0.100 -0.052 
     12 
 -0.005 
+```
+
+#### Asymptotic standard error limit for approximately two standard errors
+```r
 > SE=1/(sqrt(length(SPY)))
 > 2*SE
 [1] 0.2357023
+```
+> Lags 1 and 6 are significant at 5% level
+
+> Tsay uses maximum likelihood estimation on autoregressive model for SPY
+
+#### Finds that AR(6) order minimizes AIC – i.e. the identified order is 6
+> AIC
+```r
 > mm1=ar(SPY, method='mle') 
 > mm1$order
 [1] 6
+```
+
+#### Install FitAR package for AIC and BIC options
+```r
 > install.packages("FitAR")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -143,6 +201,10 @@ Warning messages:
 1: package ‘FitAR’ was built under R version 3.3.3 
 2: package ‘leaps’ was built under R version 3.3.3 
 3: package ‘bestglm’ was built under R version 3.3.3 
+```
+
+#### AIC finds
+```r
 > SelectModel(SPY, lag.max=12, ARModel="AR", Best=1, Criterion="AIC") 
 [1] 6
 > SelectModel(SPY, lag.max=12, ARModel="AR", Best=12, Criterion="AIC")
@@ -159,6 +221,10 @@ Warning messages:
 10  0 -423.8407 -0.2879934
 11 10 -423.0346  3.5143097
 12 11 -421.0911  5.4134322
+```
+
+#### BIC
+```r
 > SelectModel(SPY, lag.max=12, ARModel="AR", Best=1, Criterion="BIC") 
 [1] 0
 > SelectModel(SPY, lag.max=12, ARModel="AR", Best=12, Criterion="BIC")
@@ -175,6 +241,12 @@ Warning messages:
 10  9 -401.5089  26.637071
 11 10 -397.9913  30.834303
 12 11 -393.7712  35.010092
+```
+
+#### Fitting an AR(6) Model
+> (p, d, q) are the AR order, the degree of differencing, and the MA order
+> Note whether coefficient is at least twice magnitude of standard error
+```r
 > m6_1=arima(SPY, order=c(6,0,0))
 > m6_1
 
@@ -187,13 +259,23 @@ Coefficients:
 s.e.  0.1147   0.1156  0.1141  0.1130   0.1160   0.1159     0.0071
 
 sigma^2 estimated as 0.002114:  log likelihood = 119.12,  aic = -222.24
+```
+
+#### Monthly data so test residuals using lag = 12
+```r
 > Box.test(m6_1$residuals, lag=12, type='Ljung')
 
         Box-Ljung test
 
 data:  m6_1$residuals
 X-squared = 2.8309, df = 12, p-value = 0.9966
+```
 
+> Since we used an AR(6) model with Q(12) Ljung-Box statistic
+
+#### Recalculate p-value using 6 degrees of freedom
+```r
 > pv=1-pchisq(2.8309, 6)
 > pv
 [1] 0.8297518
+```
