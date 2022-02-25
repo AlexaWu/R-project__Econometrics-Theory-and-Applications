@@ -16,7 +16,7 @@
 
 ### Analysis of Financial Data with R
 
-[Part 1: Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%201.r)\
+[Part 1: Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
 [Part 2: Linear Models for Financial Time Series](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%202.r)\
 [Part 3: Linear Models for Financial Time Series](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%203.r)\
 [Part 4: Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%204.r)
