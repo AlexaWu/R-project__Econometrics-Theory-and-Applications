@@ -12,7 +12,7 @@
 [Part 2: Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
 [Part 3: Instrumental Variables](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%203%20-%20Instrumental%20Variables.md): Stage 1&2 of 2SLS (no SE Adjustment), Direct IV Regression (with SE Adjustment)\
 [Part 4: Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
-[Part 5: Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Mastering%20'Metrics%205.r)
+[Part 5: Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
 
 ### Analysis of Financial Data with R
 
