@@ -1,6 +1,8 @@
+```{r}
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
 > setwd('C:/#Baruch/Econometrics/A&P')
+```
 
 #Import Dataset
 > ExportM1=read.csv("ExportM1.csv")
