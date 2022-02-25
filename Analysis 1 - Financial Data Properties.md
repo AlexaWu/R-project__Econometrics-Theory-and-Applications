@@ -60,7 +60,7 @@ package ‘quantmod’ was built under R version 3.3.3
 ```
 
 #### Download daily Apple stock prices via Yahoo Finance – which is default aggregator
-#### Copying and pasting can create issues with quotes
+> Copying and pasting can create issues with quotes
 ```r
 > getSymbols('AAPL')
     As of 0.4-0, ‘getSymbols’ uses env=parent.frame() and
@@ -106,7 +106,7 @@ package ‘quantmod’ was built under R version 3.3.3
 ```
 
 #### Specifying dates of interest for subset
-#### Note data shown on Yahoo screen different than downloaded to CSV
+> Note data shown on Yahoo screen different than downloaded to CSV
 ```r
 > getSymbols('AAPL', from="2008-01-01", to="2013-12-31") 
 [1] "AAPL"
@@ -448,8 +448,8 @@ F-statistic: 34.34 on 1 and 70 DF,  p-value: 1.38e-07
 ```
 
 #### Run linear market model
-#### R-squared is % of movement in stock explained by movements in overall market
-#### Beta indicates whether asset is more or less volatile than overall market
+> R-squared is % of movement in stock explained by movements in overall market
+> Beta indicates whether asset is more or less volatile than overall market
 ```r
 > summary(lm(AAPL.mo.rtn ~ SPY.mo.rtn))
 
