@@ -328,6 +328,8 @@ F-statistic: 21.77 on 5 and 43 DF,  p-value: 8.418e-11
 ```
 
 ## Quadratics
+
+#### Import Dataset
 ```r
 > ExportM6=read.csv("ExportM6.csv")
 > attach(ExportM6)
@@ -346,6 +348,10 @@ The following objects are masked from ExportM3:
 > names(ExportM6)
 [1] "ï..Student" "Grade"      "Hours"      "Hours2"     "Econ"      
 [6] "SAT"       
+```
+
+#### Single Variable OLS Regression – Linear Model
+```r
 > summary(lm(Grade~Hours,data=ExportM6))
 
 Call:
@@ -365,7 +371,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 7.367 on 47 degrees of freedom
 Multiple R-squared:  0.4787,    Adjusted R-squared:  0.4676 
 F-statistic: 43.15 on 1 and 47 DF,  p-value: 3.687e-08
+```
 
+#### Single Variable OLS Regression – Quadratic Added
+```r
 > summary(lm(Grade~Hours+Hours2,data=ExportM6))
 
 Call:
@@ -386,7 +395,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 7.209 on 46 degrees of freedom
 Multiple R-squared:  0.5113,    Adjusted R-squared:  0.4901 
 F-statistic: 24.07 on 2 and 46 DF,  p-value: 7.042e-08
+```
 
+#### Multiple Variable OLS Regression – Linear Model
+```r
 > summary(lm(Grade~Hours+Econ+SAT,data=ExportM6))
 
 Call:
@@ -408,7 +420,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 5.614 on 45 degrees of freedom
 Multiple R-squared:  0.7101,    Adjusted R-squared:  0.6908 
 F-statistic: 36.75 on 3 and 45 DF,  p-value: 3.664e-12
+```
 
+#### Multiple Variable OLS Regression – Quadratic Added
+```r
 > summary(lm(Grade~Hours+Hours2+Econ+SAT,data=ExportM6))
 
 Call:
@@ -431,7 +446,12 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 5.526 on 44 degrees of freedom
 Multiple R-squared:  0.7253,    Adjusted R-squared:  0.7004 
 F-statistic: 29.05 on 4 and 44 DF,  p-value: 7.635e-12
+```
 
+## Logs
+
+#### Import Dataset
+```r
 > ExportM7=read.csv("ExportM7.csv")
 > attach(ExportM7)
 The following objects are masked from ExportM6:
@@ -453,6 +473,10 @@ The following objects are masked from ExportM3:
 > names(ExportM7)
 [1] "ï..Student" "Grade"      "LnGrade"    "Hours"      "LnHours"   
 [6] "Econ"       "SAT"        "LnSAT"     
+```
+
+#### Single Variable OLS Regression – Linear Model
+```r
 > summary(lm(Grade~Hours,data=ExportM7))
 
 Call:
@@ -472,7 +496,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 7.367 on 47 degrees of freedom
 Multiple R-squared:  0.4787,    Adjusted R-squared:  0.4676 
 F-statistic: 43.15 on 1 and 47 DF,  p-value: 3.687e-08
+```
 
+#### Single Variable OLS Regression – Linear-Log Model
+```r
 > summary(lm(Grade~LnHours,data=ExportM7))
 
 Call:
@@ -492,7 +519,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 7.027 on 47 degrees of freedom
 Multiple R-squared:  0.5256,    Adjusted R-squared:  0.5155 
 F-statistic: 52.08 on 1 and 47 DF,  p-value: 3.838e-09
+```
 
+#### Single Variable OLS Regression – Log-Linear Model
+```r
 > summary(lm(LnGrade~Hours,data=ExportM7))
 
 Call:
@@ -512,7 +542,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 0.1031 on 47 degrees of freedom
 Multiple R-squared:  0.4519,    Adjusted R-squared:  0.4402 
 F-statistic: 38.75 on 1 and 47 DF,  p-value: 1.23e-07
+```
 
+#### Single Variable OLS Regression – Log-Log Model
+```r
 > summary(lm(LnGrade~LnHours,data=ExportM7))
 
 Call:
@@ -532,7 +565,12 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 0.09651 on 47 degrees of freedom
 Multiple R-squared:  0.5198,    Adjusted R-squared:  0.5096 
 F-statistic: 50.88 on 1 and 47 DF,  p-value: 5.135e-09
+```
 
+## Interaction Effects
+
+#### Import Dataset
+```r
 > ExportM8=read.csv("ExportM8.csv")
 > attach(ExportM8)
 The following objects are masked from ExportM7:
@@ -558,6 +596,10 @@ The following objects are masked from ExportM3:
 > names(ExportM8)
 [1] "ï..Student" "Grade"      "Hours"      "Econ"       "SAT"       
 [6] "Male"       "HoursEcon"  "HoursSAT"   "MaleEcon"  
+```
+
+#### Interacting Two Dummy Variables
+```r
 > summary(lm(Grade~Econ+Male,data=ExportM8))
 
 Call:
@@ -622,7 +664,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 8.278 on 45 degrees of freedom
 Multiple R-squared:  0.3697,    Adjusted R-squared:  0.3276 
 F-statistic: 8.797 on 3 and 45 DF,  p-value: 0.0001059
+```
 
+#### Interacting Dummy Variable with Continuous Variable
+```r
 > summary (lm(Grade ~ Hours + Econ, data=ExportM8))
 
 Call:
@@ -687,7 +732,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 6.399 on 45 degrees of freedom
 Multiple R-squared:  0.6234,    Adjusted R-squared:  0.5983 
 F-statistic: 24.83 on 3 and 45 DF,  p-value: 1.25e-09
+```
 
+#### Interacting Two Continuous Variables
+```r
 > summary (lm(Grade ~ Hours + SAT, data=ExportM8))
 
 Call:
@@ -752,7 +800,12 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 6.435 on 45 degrees of freedom
 Multiple R-squared:  0.6192,    Adjusted R-squared:  0.5938 
 F-statistic: 24.39 on 3 and 45 DF,  p-value: 1.6e-09
+```
 
+## Binary Dependent Variable
+
+#### Import Dataset
+```r
 > ExportM9 = read.csv ("ExportM9.csv") 
 > attach(ExportM9)
 The following objects are masked from ExportM8:
@@ -782,6 +835,10 @@ The following objects are masked from ExportM3:
 > names(ExportM9)
 [1] "ï..Student" "Grade"      "Pass"       "Hours"      "Econ"      
 [6] "SAT"       
+```
+
+#### OLS continuous
+```r
 > summary (lm(Grade ~ Hours, data=ExportM9))
 
 Call:
@@ -823,7 +880,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 5.614 on 45 degrees of freedom
 Multiple R-squared:  0.7101,    Adjusted R-squared:  0.6908 
 F-statistic: 36.75 on 3 and 45 DF,  p-value: 3.664e-12
+```
 
+#### OLS with binary
+```r
 > summary (lm(Pass ~ Hours, data=ExportM9))
 
 Call:
@@ -865,7 +925,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 0.3412 on 45 degrees of freedom
 Multiple R-squared:  0.3416,    Adjusted R-squared:  0.2977 
 F-statistic: 7.783 on 3 and 45 DF,  p-value: 0.0002724
+```
 
+#### Logit with binary
+```r
 > model1<-glm(Pass ~ Hours, family=binomial (link='logit'), data=ExportM9) 
 > summary(model1)
 
@@ -919,4 +982,4 @@ Residual deviance: 25.957  on 45  degrees of freedom
 AIC: 33.957
 
 Number of Fisher Scoring iterations: 19
-
+```
