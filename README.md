@@ -1,6 +1,6 @@
 # R Project: Econometrics Theory and Applications
 
-- Utilized MS Excel and R programming skills to run statistical calculations on supplied data sets.
+- Utilized R programming skills to run statistical calculations on supplied data sets.
 - Applied econometric methods involving panel and time series data.
 - Critiqued reported regression results in applied academic papers, and interpret the results to a variety of audiences.
 
