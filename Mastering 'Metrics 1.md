@@ -1,41 +1,56 @@
-```{r}
-getwd()
+```r
+> getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
-setwd('C:/#Baruch/Econometrics/A&P')
+> setwd('C:/#Baruch/Econometrics/A&P')
 ```
 
-# Import Dataset
+#### Import Dataset
+```r
 > ExportM1=read.csv("ExportM1.csv")
 > attach(ExportM1)
 > names(ExportM1)
 [1] "ID"    "Hours" "Grade"
+```
 
-#Calculate summary statistics
+#### Calculate summary statistics
+```r
 > summary(Grade)
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  50.00   72.00   79.00   77.69   85.00   94.00
+   Min.     1st Qu.  Median   Mean     3rd Qu.  Max. 
+  50.00     72.00    79.00    77.69    85.00    94.00
+```
 
-#Calculate mean
+#### Calculate mean
+```r
 > mean(Grade)
 [1] 77.69388
+```
 
-#Calculate sample variance
+#### Calculate sample variance
+```r
 > var(Grade)
 [1] 101.9252
+```
 
-#Calculate sample standard deviation
+#### Calculate sample standard deviation
+```r
 > sd(Grade)
 [1] 10.0958
+```
 
-#Calculate sample covariance
+#### Calculate sample covariance
+```r
 > cov(Grade,Hours)
 [1] 14.76233
+```
 
-#Calculate sample correlation coefficient
+#### Calculate sample correlation coefficient
+```r
 > cor(Grade,Hours)
 [1] 0.6918535
+```
 
-#Calculate population skewness
+#### Calculate population skewness
+```r
 > install.packages("moments")
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -53,14 +68,18 @@ The downloaded binary packages are in
 [1] -0.5884398
 > kurtosis(Grade)
 [1] 2.970073
+```
 
-#Import Dataset
+#### Import Dataset
+```r
 > ExportM2=read.csv("ExportM2.csv")
 > attach(ExportM2)
 > names(ExportM2)
 [1] "Grade_D0" "Grade_D1"
+```
 
-#T Test NOT assuming equal variance (i.e. unpooled)
+#### T Test NOT assuming equal variance (i.e. unpooled)
+```r
 > t.test(Grade_D0,Grade_D1,var.equal=FALSE,paired=FALSE)
 
         Welch Two Sample t-test
@@ -73,8 +92,10 @@ alternative hypothesis: true difference in means is not equal to 0
 sample estimates:
 mean of x mean of y 
  73.14286  83.76190 
+```
 
-#T Test assuming equal variance (i.e. pooled)
+#### T Test assuming equal variance (i.e. pooled)
+```r
 > t.test(Grade_D0,Grade_D1,var.equal=TRUE,paired=FALSE)
 
         Two Sample t-test
@@ -87,3 +108,4 @@ alternative hypothesis: true difference in means is not equal to 0
 sample estimates:
 mean of x mean of y 
  73.14286  83.76190 
+```
