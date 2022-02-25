@@ -1,13 +1,28 @@
+```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
 > setwd('C:/#Baruch/Econometrics/A&P')
+```
+
+## AR Models
+
+#### Import Dataset
+```r
 > ExportM12 = read.csv ("ExportM12.csv")
 > attach(ExportM12)
 > names(ExportM12)
 [1] "period"      "month"       "sales"       "sales_lag1"  "sales_lag2" 
 [6] "ln_sales"    "sales_D1"    "ln_sales_D1"
+```
+
+#### Drop 1st and 2nd observations for lagged models
+```r
 > Data1_AR1<-subset(ExportM12, period>1)
 > Data1_AR2<-subset(ExportM12, period>2)
+```
+
+#### AR(1) Model
+```r
 > summary (lm(sales ~ sales_lag1, data= Data1_AR1))
 
 Call:
@@ -27,7 +42,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 221500 on 33 degrees of freedom
 Multiple R-squared:  0.2235,    Adjusted R-squared:    0.2 
 F-statistic: 9.501 on 1 and 33 DF,  p-value: 0.004128
+```
 
+#### AR(2) Model
+```r
 > summary (lm(sales ~ sales_lag1 + sales_lag2, data= Data1_AR2))
 
 Call:
@@ -48,7 +66,12 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 220500 on 31 degrees of freedom
 Multiple R-squared:  0.2728,    Adjusted R-squared:  0.2259 
 F-statistic: 5.814 on 2 and 31 DF,  p-value: 0.007175
+```
 
+## Regression Discontinuity Designs
+
+#### Import Dataset
+```r
 > ExportM13 = read.csv ("ExportM13.csv")
 > attach(ExportM13)
 The following objects are masked from ExportM12:
@@ -57,7 +80,15 @@ The following objects are masked from ExportM12:
 
 > names(ExportM13)
 [1] "period"     "month"      "sales"      "sales_lag1" "regime"    
+```
+
+#### Drop 1st observation for first lag
+```r
 > Data_AR1<-subset(ExportM13, period>1)
+```
+
+#### Regime Dummy Variable
+```r
 > summary (lm(sales ~ sales_lag1 + regime, data=Data_AR1))
 
 Call:
@@ -78,7 +109,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 199900 on 32 degrees of freedom
 Multiple R-squared:  0.387,     Adjusted R-squared:  0.3487 
 F-statistic:  10.1 on 2 and 32 DF,  p-value: 0.0003973
+```
 
+#### Chow Test
+```r
 > install.packages("strucchange") 
 Installing package into ‘C:/Users/Alexa~Chutian/Documents/R/win-library/3.3’
 (as ‘lib’ is unspecified)
@@ -111,3 +145,4 @@ Warning messages:
 
 data:  sales ~ sales_lag1
 F = 2.7293, p-value = 0.08094
+```
