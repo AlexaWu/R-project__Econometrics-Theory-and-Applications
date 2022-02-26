@@ -278,7 +278,11 @@ End = 996
 Frequency = 1 
  [1] 0.07102406 0.07251543 0.07257804 0.07290066 0.07296034 0.07296620
  [7] 0.07296813 0.07296934 0.07296957 0.07346720
+```
 
+#### For MA Model use ACF to determine the right lag order
+> Lags 1 and 9 are significant at 5% level, i.e. ACF twice the SE
+```r
 > acf(ew, lag=12, plot=FALSE)
 
 Autocorrelations of series ‘ew’, by lag
@@ -290,6 +294,11 @@ Autocorrelations of series ‘ew’, by lag
 > SE=1/(sqrt(length(ew))) 
 > 2*SE
 [1] 0.06337243
+```
+
+#### Fitting an MA(9) Model
+> AIC is -2419.72
+```r
 > arima(ew, order=c(0, 0, 9))
 
 Call:
@@ -304,6 +313,11 @@ s.e.  0.0316  0.0321   0.0328   0.0336  0.0319   0.0318  0.0364   0.0354
 s.e.  0.0323     0.0028
 
 sigma^2 estimated as 0.005043:  log likelihood = 1220.86,  aic = -2419.72
+```
+
+#### Fitting refined MA(9) Model since only lags 1, 3, 9 and intercept are significant
+> AIC is -2421.22
+```r
 > arima(ew, order=c(0, 0, 9), fixed=c(NA,0,NA,0,0,0,0,0,NA,NA))
 
 Call:
@@ -315,6 +329,11 @@ Coefficients:
 s.e.  0.0293    0   0.0338    0    0    0    0    0  0.0312     0.0027
 
 sigma^2 estimated as 0.005097:  log likelihood = 1215.61,  aic = -2421.22
+```
+
+#### Out-of-sample prediction at forecast origin Feb 2008 (row 986) for AR(9)
+> i.e. Check the reliability of predictions we would have made Mar-Dec 2008
+```r
 > ma9=arima(ew[1:986], order=c(0, 0, 9), fixed=c(NA,0,NA,0,0,0,0,0,NA,NA)) 
 > ma9
 
@@ -328,6 +347,10 @@ Coefficients:
 s.e.  0.0295    0   0.0338    0    0    0    0    0  0.0312     0.0027
 
 sigma^2 estimated as 0.005066:  log likelihood = 1206.44,  aic = -2402.88
+```
+
+#### Point forecast and standard error of prediction
+```r
 > predict(ma9,10)
 $pred
 Time Series:
