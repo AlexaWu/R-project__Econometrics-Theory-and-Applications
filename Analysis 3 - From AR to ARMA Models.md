@@ -1,6 +1,15 @@
+```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
+```
+
+#### Set working directory
+```r
 > setwd('C:/#Baruch/Econometrics/Financial Data')
+```
+
+#### Import Dataset from Tsay
+```r
 > Data1 = read.table ("Data1.txt", header=T)
 > head(Data1)
       date    ibmrtn     vwrtn     ewrtn     sprtn
@@ -10,7 +19,15 @@
 4 19260430  0.089783  0.038358  0.032946  0.022688
 5 19260528  0.036932  0.012172  0.001035  0.007679
 6 19260630  0.068493  0.056888  0.050487  0.043184
+```
+
+#### Using CRSP (Center for Research in Security Prices) Equal-Weighted Index data
+```r
 > ew=Data1$ewrtn
+```
+
+#### Partial ACF
+```r
 > acf(ew, lag=12) 
 > pacf(ew, lag=12)
 > acf(ew, lag=12, plot=FALSE) 
@@ -29,12 +46,26 @@ Partial autocorrelations of series ‘ew’, by lag
  0.214 -0.036 -0.103 -0.015  0.017 -0.059  0.030  0.016  0.120  0.019 -0.023 
     12 
  0.049 
+```
+
+#### Asymptotic standard error limit for approximately two standard errors
+> Lags 1 and 9 are significant at 5% level, i.e. PACF twice the SE
+```r
 > SE=1/(sqrt(length(ew)))
 > 2*SE
 [1] 0.06337243
+```
+
+#### Use maximum likelihood estimation on autoregressive model	
+> AIC finds AR(9) is the identified order
+```r
 > mm1=ar(ew, method='mle') 
 > mm1$order
 [1] 9
+```
+
+#### Install FitAR package for AIC and BIC options
+```r
 > install.packages("FitAR")
 Warning in install.packages("FitAR") :
   'lib = "C:/Program Files/R/R-3.4.0/library"' is not writable
@@ -95,6 +126,10 @@ Loading required package: lattice
 Loading required package: leaps
 Loading required package: ltsa
 Loading required package: bestglm
+```
+
+#### AIC finds AR(9)
+```r
 > SelectModel(ew, lag.max=12, ARModel="AR", Best=1, Criterion="AIC")
 [1] 9
 > SelectModel(ew, lag.max=12, ARModel="AR", Best=12, Criterion="AIC")
@@ -111,6 +146,10 @@ Loading required package: bestglm
 10  1 -5230.288  -42.12479
 11  2 -5229.637  -51.01969
 12  0 -5185.562  -42.77294
+```
+
+#### BIC finds AR(1)
+```r
 > SelectModel(ew, lag.max=12, ARModel="AR", Best=1, Criterion="BIC")
 [1] 1
 > SelectModel(ew, lag.max=12, ARModel="AR", Best=12, Criterion="BIC")
@@ -127,6 +166,12 @@ Loading required package: bestglm
 10  8 -5189.552  -9.877655
 11 11 -5184.282   7.462007
 12  0 -5180.658 -32.965447
+```
+
+#### Fitting an AR(1) Model
+> (p, d, q) are the AR order, the degree of differencing, and the MA order
+> AIC is -2401.76
+```r
 > arima(ew, order=c(1,0,0))
 
 Call:
@@ -138,6 +183,11 @@ Coefficients:
 s.e.  0.0309     0.0029
 
 sigma^2 estimated as 0.005219:  log likelihood = 1203.88,  aic = -2401.76
+```
+
+#### Fitting an AR(3) Model
+> AIC is -2409.98
+```r
 > arima(ew, order=c(3, 0, 0))
 
 Call:
@@ -149,6 +199,11 @@ Coefficients:
 s.e.  0.0315   0.0323   0.0317     0.0025
 
 sigma^2 estimated as 0.005156:  log likelihood = 1209.99,  aic = -2409.98
+```
+
+#### Fitting an AR(9) Model
+> AIC is -2417.71
+```r
 > arima(ew, order=c(9, 0, 0))
 
 Call:
@@ -163,6 +218,11 @@ s.e.  0.0314   0.0322   0.0323   0.0324  0.0324   0.0324  0.0323   0.0323
 s.e.  0.0316     0.0028
 
 sigma^2 estimated as 0.005054:  log likelihood = 1219.85,  aic = -2417.71
+```
+
+#### Fitting an AR(9) Model but just allow lags 1, 3, 9 and intercept to be estimated
+> AIC is -2425.53
+```r
 > arima(ew, order=c(9, 0, 0), fixed=c(NA,0,NA,0,0,0,0,0,NA,NA))
 
 Call:
@@ -177,6 +237,11 @@ sigma^2 estimated as 0.005075:  log likelihood = 1217.76,  aic = -2425.53
 Warning message:
 In arima(ew, order = c(9, 0, 0), fixed = c(NA, 0, NA, 0, 0, 0, 0,  :
   some AR parameters were fixed: setting transform.pars = FALSE
+```
+
+#### Out-of-sample prediction at forecast origin Feb 2008 (row 986) for AR(9)
+> i.e. Check the reliability of predictions we would have made Mar-Dec 2008
+```r
 > ar9=arima(ew[1:986], order=c(9, 0, 0), fixed=c(NA,0,NA,0,0,0,0,0,NA,NA)) 
 Warning message:
 In arima(ew[1:986], order = c(9, 0, 0), fixed = c(NA, 0, NA, 0,  :
@@ -193,6 +258,10 @@ Coefficients:
 s.e.  0.0307    0   0.0308    0    0    0    0    0  0.0307     0.0029
 
 sigma^2 estimated as 0.005044:  log likelihood = 1208.53,  aic = -2407.06
+```
+
+#### Point forecast and standard error of prediction
+```r                          
 > predict(ar9,10)
 $pred
 Time Series:
