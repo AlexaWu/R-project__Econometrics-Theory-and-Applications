@@ -1,3 +1,11 @@
+### Functions & Packages
+
+Functions: getwd(), setwd(), read.csv(), attach(), names(), summary(), mean(), var(), sd(), cov(,), cor(,), t.test()
+
+Packages: install.packages("moments"), library(moments), skewness(), kurtosis()
+
+------
+### R codes
 ```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
