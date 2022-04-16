@@ -1,3 +1,14 @@
+### Functions & Packages
+
+**Functions**: getwd(), setwd(), read.csv(), attach(), names(), summary(), lm() 
+
+**Packages**: 
+install.packages("sandwich"), library(sandwich), sqrt(diag(vcovHC()))\
+install.packages("lmtest"), library(lmtest), coeftest(,vcov=vcovHC)
+
+------
+### R codes
+
 ```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
