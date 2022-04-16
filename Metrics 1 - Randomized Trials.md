@@ -1,6 +1,6 @@
 ### Functions & Packages
 
-Functions: getwd(), setwd(), read.csv(), attach(), names(), summary(), mean(), var(), sd(), cov(,), cor(,), t.test()
+Functions: getwd(), setwd(), read.csv(), attach(), names(), summary(), mean(), var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
 
 Packages: install.packages("moments"), library(moments), skewness(), kurtosis()
 
