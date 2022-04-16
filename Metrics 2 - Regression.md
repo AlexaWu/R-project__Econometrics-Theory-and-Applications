@@ -2,7 +2,7 @@
 
 **Functions**: getwd(), setwd(), read.csv(), attach(), names(), summary(), lm() 
 
-**Packages**: 
+**Packages**: \
 install.packages("sandwich"), library(sandwich), sqrt(diag(vcovHC()))\
 install.packages("lmtest"), library(lmtest), coeftest(,vcov=vcovHC)
 
