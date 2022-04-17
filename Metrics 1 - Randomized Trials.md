@@ -1,6 +1,6 @@
 ### Packages & Functions
 
-**"Base"Packages**:mean(), var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
+**"Base" packages**:mean(), var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
 
 function | description
 --|--
