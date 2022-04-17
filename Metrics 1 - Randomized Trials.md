@@ -13,6 +13,7 @@ setwd()| Set Working Directory
 [mean()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/mean)|Arithmetic Mean
 
 **["stats" package](https://www.rdocumentation.org/packages/stats/versions/3.6.2)**
+
 function | description
 --|--
 [var()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cor)|compute the variance
@@ -21,7 +22,12 @@ function | description
 [sd()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/sd)|compute the Standard Deviation
 [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)|Student's t-Test
 
-**Packages**: install.packages("moments"), library(moments), skewness(), kurtosis()
+**["moments" package](https://www.rdocumentation.org/packages/moments/versions/0.14)**
+
+function | description
+--|--
+[skewness()](https://www.rdocumentation.org/packages/moments/versions/0.14/topics/skewness)|
+[kurtosis()](https://www.rdocumentation.org/packages/moments/versions/0.14/topics/kurtosis)|
 
 ------
 ### R Code and Output
