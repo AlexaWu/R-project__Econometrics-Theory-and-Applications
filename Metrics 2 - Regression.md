@@ -1,6 +1,6 @@
 ### Functions & Packages
 
-**Functions**: 
+**"Base" packages**: 
 
 function | description
 --|--
@@ -10,11 +10,21 @@ setwd()| Set Working Directory
 [attach()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/attach)|Attach Set of R Objects to Search Path
 [names()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/names)|The Names of an Object
 [summary()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary)|Object Summaries
+[sqrt()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/MathFun)|computes the (principal) square root
+[diag()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/diag)|Matrix Diagonals
+
+**["stats" packages](https://www.rdocumentation.org/packages/stats/versions/3.6.2)**: 
+function | description
+--|--
 [lm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm) | Fitting Linear Models
 [glm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm) | Fitting Generalized Linear Models
 
-**Packages**: \
-install.packages("sandwich"), library(sandwich), sqrt(diag(vcovHC()))\
+**["sandwich" packages](https://www.rdocumentation.org/packages/sandwich/versions/3.0-1)**: 
+function | description
+--|--
+[vcovHC()](https://www.rdocumentation.org/packages/sandwich/versions/3.0-1/topics/vcovHC)|Heteroscedasticity-Consistent Covariance Matrix Estimation
+
+
 install.packages("lmtest"), library(lmtest), coeftest(,vcov=vcovHC)
 
 ------
