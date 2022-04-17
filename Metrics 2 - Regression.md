@@ -24,8 +24,10 @@ function | description
 --|--
 [vcovHC()](https://www.rdocumentation.org/packages/sandwich/versions/3.0-1/topics/vcovHC)|Heteroscedasticity-Consistent Covariance Matrix Estimation
 
-
-install.packages("lmtest"), library(lmtest), coeftest(,vcov=vcovHC)
+**["lmtest" packages](https://www.rdocumentation.org/packages/lmtest/versions/0.9-40)**: 
+function | description
+--|--
+[coeftest()](https://www.rdocumentation.org/packages/lmtest/versions/0.9-40/topics/coeftest)|Inference for Estimated Coefficients
 
 ------
 ### R codes
