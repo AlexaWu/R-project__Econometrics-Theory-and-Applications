@@ -26,8 +26,8 @@ function | description
 
 function | description
 --|--
-[skewness()](https://www.rdocumentation.org/packages/moments/versions/0.14/topics/skewness)|
-[kurtosis()](https://www.rdocumentation.org/packages/moments/versions/0.14/topics/kurtosis)|
+[skewness()](https://www.rdocumentation.org/packages/moments/versions/0.14/topics/skewness)|Skewness of the sample
+[kurtosis()](https://www.rdocumentation.org/packages/moments/versions/0.14/topics/kurtosis)|Pearson's measure of kurtosis
 
 ------
 ### R Code and Output
