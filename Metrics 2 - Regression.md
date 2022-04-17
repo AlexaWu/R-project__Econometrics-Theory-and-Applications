@@ -1,4 +1,4 @@
-### Functions & Packages
+### :card_index_dividers: Functions & Packages
 
 **["base" package](https://www.rdocumentation.org/packages/base/versions/3.6.2)**
 
@@ -30,7 +30,7 @@ function | description
 [coeftest()](https://www.rdocumentation.org/packages/lmtest/versions/0.9-40/topics/coeftest)|Inference for Estimated Coefficients
 
 ------
-### R Code and Output
+### :card_index_dividers: R Code and Output
 
 ```r
 > getwd()
