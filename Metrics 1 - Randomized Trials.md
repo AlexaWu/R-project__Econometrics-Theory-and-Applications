@@ -1,6 +1,6 @@
 ### Packages & Functions
 
-**"Base" packages**:mean(), var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
+**["Base" packages](https://www.rdocumentation.org/packages/base/versions/3.6.2)**: var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
 
 function | description
 --|--
@@ -10,12 +10,14 @@ setwd()| Set Working Directory
 [attach()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/attach)|Attach Set of R Objects to Search Path
 [names()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/names)|The Names of an Object
 [summary()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary)|Object Summaries
+[mean()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/mean)|Arithmetic Mean
+[var()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/mean)|Arithmetic Mean
 
 
 **Packages**: install.packages("moments"), library(moments), skewness(), kurtosis()
 
 ------
-### R codes
+### R Code and Output
 ```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
