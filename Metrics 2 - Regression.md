@@ -1,6 +1,13 @@
 ### Functions & Packages
 
-**Functions**: getwd(), setwd(), read.csv(), attach(), names(), summary(), lm() 
+**Functions**: read.csv(), attach(), names(), summary()
+
+function | description
+--|--
+[getwd()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd)|Get Working Directory
+setwd()| Set Working Directory
+[lm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm) | Fitting Linear Models
+[glm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm) | Fitting Generalized Linear Models
 
 **Packages**: \
 install.packages("sandwich"), library(sandwich), sqrt(diag(vcovHC()))\
