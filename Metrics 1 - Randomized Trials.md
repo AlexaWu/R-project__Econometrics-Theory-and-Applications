@@ -1,4 +1,4 @@
-### Packages & Functions
+### :card_index_dividers: Packages & Functions
 
 **["base" package](https://www.rdocumentation.org/packages/base/versions/3.6.2)**
 
@@ -30,7 +30,7 @@ function | description
 [kurtosis()](https://www.rdocumentation.org/packages/moments/versions/0.14/topics/kurtosis)|Pearson's measure of kurtosis
 
 ------
-### R Code and Output
+### :card_index_dividers: R Code and Output
 ```r
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
