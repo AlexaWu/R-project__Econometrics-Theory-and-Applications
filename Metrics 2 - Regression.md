@@ -30,7 +30,7 @@ function | description
 [coeftest()](https://www.rdocumentation.org/packages/lmtest/versions/0.9-40/topics/coeftest)|Inference for Estimated Coefficients
 
 ------
-### R codes
+### R Code and Output
 
 ```r
 > getwd()
