@@ -1,11 +1,15 @@
 ### Functions & Packages
 
-**Functions**: read.csv(), attach(), names(), summary()
+**Functions**: 
 
 function | description
 --|--
 [getwd()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd)|Get Working Directory
 setwd()| Set Working Directory
+[read.csv()](https://www.rdocumentation.org/packages/qtl2/versions/0.24/topics/read_csv)|Read a csv file
+[attach()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/attach)|Attach Set of R Objects to Search Path
+[names()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/names)|The Names of an Object
+[summary()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary)|Object Summaries
 [lm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm) | Fitting Linear Models
 [glm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm) | Fitting Generalized Linear Models
 
