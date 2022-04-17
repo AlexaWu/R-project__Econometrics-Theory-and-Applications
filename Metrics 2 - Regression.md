@@ -1,6 +1,6 @@
 ### Functions & Packages
 
-**"Base" packages**: 
+**["Base" package](https://www.rdocumentation.org/packages/base/versions/3.6.2)**
 
 function | description
 --|--
@@ -13,18 +13,18 @@ setwd()| Set Working Directory
 [sqrt()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/MathFun)|computes the (principal) square root
 [diag()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/diag)|Matrix Diagonals
 
-**["stats" packages](https://www.rdocumentation.org/packages/stats/versions/3.6.2)**: 
+**["stats" package](https://www.rdocumentation.org/packages/stats/versions/3.6.2)**
 function | description
 --|--
 [lm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm) | Fitting Linear Models
 [glm()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm) | Fitting Generalized Linear Models
 
-**["sandwich" packages](https://www.rdocumentation.org/packages/sandwich/versions/3.0-1)**: 
+**["sandwich" package](https://www.rdocumentation.org/packages/sandwich/versions/3.0-1)**
 function | description
 --|--
 [vcovHC()](https://www.rdocumentation.org/packages/sandwich/versions/3.0-1/topics/vcovHC)|Heteroscedasticity-Consistent Covariance Matrix Estimation
 
-**["lmtest" packages](https://www.rdocumentation.org/packages/lmtest/versions/0.9-40)**: 
+**["lmtest" package](https://www.rdocumentation.org/packages/lmtest/versions/0.9-40)**
 function | description
 --|--
 [coeftest()](https://www.rdocumentation.org/packages/lmtest/versions/0.9-40/topics/coeftest)|Inference for Estimated Coefficients
