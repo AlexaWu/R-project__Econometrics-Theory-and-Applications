@@ -1,6 +1,6 @@
 ### Packages & Functions
 
-**["Base" packages](https://www.rdocumentation.org/packages/base/versions/3.6.2)**: var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
+**["base" package](https://www.rdocumentation.org/packages/base/versions/3.6.2)**
 
 function | description
 --|--
@@ -11,8 +11,15 @@ setwd()| Set Working Directory
 [names()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/names)|The Names of an Object
 [summary()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary)|Object Summaries
 [mean()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/mean)|Arithmetic Mean
-[var()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/mean)|Arithmetic Mean
 
+**["stats" package](https://www.rdocumentation.org/packages/stats/versions/3.6.2)**
+function | description
+--|--
+[var()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cor)|compute the variance
+[cov()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cor)|compute the covariance 
+[cor()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cor)|compute the correlation
+[sd()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/sd)|compute the Standard Deviation
+[t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)|Student's t-Test
 
 **Packages**: install.packages("moments"), library(moments), skewness(), kurtosis()
 
