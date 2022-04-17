@@ -10,24 +10,24 @@
 
 ### :books: Book 1: Mastering ‘Metrics: The Path From Cause To Effect
 
-:one: [Part 1: Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
-:two: [Part 2: Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
-:three: [Part 3: Instrumental Variables](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%203%20-%20Instrumental%20Variables.md): Stage 1&2 of 2SLS (no SE Adjustment), Direct IV Regression (with SE Adjustment)\
-:four: [Part 4: Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
-:five: [Part 5: Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
+:one: [Part 1 - Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
+:two: [Part 2 - Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
+:three: [Part 3 - Instrumental Variables](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%203%20-%20Instrumental%20Variables.md): Stage 1&2 of 2SLS (no SE Adjustment), Direct IV Regression (with SE Adjustment)\
+:four: [Part 4 - Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
+:five: [Part 5 - Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
 
 ### :books: Book 2: Analysis of Financial Data with R
 
-:one: [Part 1: Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
-:two: [Part 2: Linear Models for Financial Time Series - Autoregressive Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%202%20-%20Time%20Series(1).md)\
-:three: [Part 3: Linear Models for Financial Time Series - From	AR	to	ARMA	Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%203%20-%20Time%20Series(2).md)\
-:four: [Part 4: Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%204.r)
+:one: [Part 1 - Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
+:two: [Part 2 - Linear Models for Financial Time Series - Autoregressive Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%202%20-%20Time%20Series(1).md)\
+:three: [Part 3 - Linear Models for Financial Time Series - From	AR	to	ARMA	Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%203%20-%20Time%20Series(2).md)\
+:four: [Part 4 - Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%204.r)
 
 ### :computer: Project 1: Assessing Income and Education Using BLS Data
 
 > Dataset Resource: Sponsored by the Bureau of Labor Statistics, the National Longitudinal Surveys (NLS) are a family of surveys dedicated to tracking the labor market and other life experiences of American men and women
 
-:one: [Part 1 Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
+:one: [Part 1 - Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
 
 1. Downloading Data
 2. Data Manipulation in Excel
@@ -36,7 +36,7 @@
 
 [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
 
-:two: [Part 2 Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
+:two: [Part 2 - Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
 
 1. Data Manipulation in R
 2. Hypothesis Testing in R
