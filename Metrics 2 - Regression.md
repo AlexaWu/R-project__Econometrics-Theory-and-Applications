@@ -1,6 +1,6 @@
 ### Functions & Packages
 
-**["Base" package](https://www.rdocumentation.org/packages/base/versions/3.6.2)**
+**["base" package](https://www.rdocumentation.org/packages/base/versions/3.6.2)**
 
 function | description
 --|--
