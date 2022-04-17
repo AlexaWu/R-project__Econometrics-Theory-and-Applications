@@ -1,6 +1,11 @@
 ### Functions & Packages
 
-**Functions**: getwd(), setwd(), read.csv(), attach(), names(), summary(), mean(), var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
+**Functions**: read.csv(), attach(), names(), summary(), mean(), var(), sd(), cov(,), cor(,), [t.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test)
+
+function | description
+--|--
+[getwd()](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd)|Get Working Directory
+setwd()| Set Working Directory
 
 **Packages**: install.packages("moments"), library(moments), skewness(), kurtosis()
 
