@@ -8,9 +8,7 @@
 
 > This is a project from Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance.
 
-### :book: Book 1: Mastering ‘Metrics: The Path From Cause To Effect
-
-[book reference link](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics)
+### :book: Book 1: Mastering ‘Metrics: The Path From Cause To Effect ([link](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics))
 
 :one: [- Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
 :two: [- Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
