@@ -38,11 +38,11 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 
 :two: [Part 2 - Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
 
-1. Data Manipulation in R
-2. Hypothesis Testing in R
-3. Single Variable Regression Analysis in R
-4. Basic Linear: Multiple Variable Regression in R
-5. Various Functional Forms: Multiple Variable Regression in R
+1. Data Manipulation
+2. Hypothesis Testing
+3. Single Variable Regression Analysis
+4. Basic Linear: Multiple Variable Regression
+5. Various Functional Forms: Multiple Variable Regression
 
 [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
 
@@ -65,8 +65,8 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 
 1. Linear Model Analysis of Vanguard Total Stock Market Index Fund
 
-A. Test monthly log returns for autocorrelation
-B. Autoregressive model
+A. Test monthly log returns for autocorrelation\
+B. Autoregressive model\
 C. Moving average model
 
 2. Modeling Volatility for Amazon, Inc.
