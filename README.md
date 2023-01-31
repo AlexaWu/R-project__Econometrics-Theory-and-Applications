@@ -71,4 +71,10 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 
 2. Modeling Volatility for Amazon, Inc.
 
+&emsp;A. Test log returns for autocorrelation\
+&emsp;B. Test absolute value of log returns for dependence\
+&emsp;C. Test squared series of log returns for dependence\
+&emsp;D. Test for ARCH effects\
+&emsp;E. Build an ARCH model
+
 [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#r-code-and-output)
