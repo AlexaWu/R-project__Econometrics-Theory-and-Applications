@@ -16,7 +16,7 @@
 :four: [- Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
 :five: [- Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
 
-### :book: Book 2: Analysis of Financial Data with R
+### :book: Book 2: Analysis of Financial Data with R ([link](https://faculty.chicagobooth.edu/ruey-s-tsay/research/an-introduction-to-analysis-of-financial-data-with-r))
 
 :one: [- Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
 :two: [- Linear Models for Financial Time Series - Autoregressive Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%202%20-%20Time%20Series(1).md)\
