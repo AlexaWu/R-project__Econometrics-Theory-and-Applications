@@ -65,9 +65,9 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 
 1. Linear Model Analysis of Vanguard Total Stock Market Index Fund
 
-A. Test monthly log returns for autocorrelation\
-B. Autoregressive model\
-C. Moving average model
+&emsp;A. Test monthly log returns for autocorrelation\
+&emsp;B. Autoregressive model\
+&emsp;C. Moving average model
 
 2. Modeling Volatility for Amazon, Inc.
 
