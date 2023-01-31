@@ -34,7 +34,7 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 3. Data Analysis re: Income
 4. Data Analysis re: Income and AFQT
 
-[R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
+[R Code and Output](https://github.com/AlexaWu/R-project__Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
 
 :two: [Part 2 - Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
 
