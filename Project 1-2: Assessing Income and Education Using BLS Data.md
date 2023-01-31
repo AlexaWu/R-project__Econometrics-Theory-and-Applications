@@ -1,4 +1,4 @@
-## Project Contents
+# Project Contents
 
 **_1. Data Manipulation in R_**
   - Based on [Dataset1.xml](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Dataset1.xlsx) - notice that some observations involve top-coded income (where any income >= $300,000 is shown as exactly $300,000)
@@ -58,7 +58,7 @@
       - P-value for each parameter
       - Estimated coefficient and standard error for each parameter
 
-## R Code and Output
+# R Code and Output
 
 PART I Data Manipulation
 ```javascript
