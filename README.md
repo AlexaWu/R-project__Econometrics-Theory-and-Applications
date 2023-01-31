@@ -1,4 +1,4 @@
-# R Project - Econometrics Theory and Applications (school coursework)
+# R Project - Econometrics Theory and Applications (College Coursework)
 
 ### Project overview
 
