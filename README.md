@@ -8,7 +8,9 @@
 
 > This is a project from Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance.
 
-### :books: Book 1: Mastering ‘Metrics: The Path From Cause To Effect
+### :book: Book 1: Mastering ‘Metrics: The Path From Cause To Effect
+
+[book reference link](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics)
 
 :one: [- Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
 :two: [- Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
@@ -16,7 +18,7 @@
 :four: [- Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
 :five: [- Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
 
-### :books: Book 2: Analysis of Financial Data with R
+### :book: Book 2: Analysis of Financial Data with R
 
 :one: [- Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
 :two: [- Linear Models for Financial Time Series - Autoregressive Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%202%20-%20Time%20Series(1).md)\
