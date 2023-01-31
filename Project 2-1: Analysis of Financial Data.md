@@ -1,4 +1,4 @@
-## Project Contents
+# Project Contents
 
 **_1. Stock Price Data_**
 
@@ -50,7 +50,7 @@
 - Produce a scatterplot of Amazon and Vanguard monthly log returns; save as PDF.
 - Compute the beta for Amazon’s monthly log returns
   
-## R Code and Output
+# R Code and Output
 
 Explore in table: [Project 2-1.xlsx](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Project%202-1.xlsx)
 
