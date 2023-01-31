@@ -1,4 +1,4 @@
-## Project Contents
+# Project Contents
 
 **_1. Downloading Data_**
   - Select BSL Longitudinal Survey Data https://www.nlsinfo.org/investigator/pages/login.jsp
@@ -22,7 +22,7 @@
   - Using R calculate the sample covariance, sample correlation coefficient
   
   
-## R Code and Output
+# R Code and Output
 ```javascript
 > getwd()
 [1] "C:/Users/Alexa~Chutian/Documents"
