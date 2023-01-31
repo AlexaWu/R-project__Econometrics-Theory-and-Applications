@@ -8,7 +8,7 @@
 
 > This is a project from Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance.
 
-### :book: Book 1: Mastering ‘Metrics: The Path From Cause To Effect ([link](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics))
+### :book: Textbook 1: Mastering ‘Metrics: The Path From Cause To Effect ([link](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics))
 
 Chapter 1 - [Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
 Chapter 2 - [Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
@@ -16,7 +16,7 @@ Chapter 3 - [Instrumental Variables](https://github.com/AlexaWu/R-project---Econ
 Chapter 4 - [Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
 Chapter 5 - [Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
 
-### :book: Book 2: Analysis of Financial Data with R ([link](https://faculty.chicagobooth.edu/ruey-s-tsay/research/an-introduction-to-analysis-of-financial-data-with-r))
+### :book: Textbook 2: Analysis of Financial Data with R ([link](https://faculty.chicagobooth.edu/ruey-s-tsay/research/an-introduction-to-analysis-of-financial-data-with-r))
 
 :one: [- Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
 :two: [- Linear Models for Financial Time Series - Autoregressive Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%202%20-%20Time%20Series(1).md)\
