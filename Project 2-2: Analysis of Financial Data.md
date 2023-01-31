@@ -1,4 +1,4 @@
-## Project Contents
+# Project Contents
 
 >use 5% level when determining significance
 
@@ -48,7 +48,7 @@ E. Build an ARCH model
 - Fit an ARCH(1) model (Student’s T-distributed innovations)
 
 
-## R Code and Output
+# R Code and Output
 
 Explore in table: [Project 2-2.xlsx](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/tables/Project%202-2.xlsx)
 
