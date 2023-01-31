@@ -18,10 +18,10 @@ Chapter 5 - [Differences in Differences](https://github.com/AlexaWu/R-project---
 
 ### :book: Textbook 2: Analysis of Financial Data with R ([link](https://faculty.chicagobooth.edu/ruey-s-tsay/research/an-introduction-to-analysis-of-financial-data-with-r))
 
-:one: [- Financial Data Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
-:two: [- Linear Models for Financial Time Series - Autoregressive Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%202%20-%20Time%20Series(1).md)\
-:three: [- Linear Models for Financial Time Series - From	AR	to	ARMA	Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%203%20-%20Time%20Series(2).md)\
-:four: [- Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%204.r)
+Chapter 1 - [Financial Data and Their Properties](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%201%20-%20Financial%20Data%20Properties.md)\
+Chapter 2&3 - [Linear Models for Financial Time Series - Autoregressive Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%202%20-%20Time%20Series(1).md)\
+Chapter 2&3 - [Linear Models for Financial Time Series - From	AR	to	ARMA	Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%203%20-%20Time%20Series(2).md)\
+Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%204.r)
 
 ### :computer: Project 1: Assessing Income and Education Using BLS Data
 
