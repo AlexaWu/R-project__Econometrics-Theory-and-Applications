@@ -10,11 +10,11 @@
 
 ### :book: Book 1: Mastering ‘Metrics: The Path From Cause To Effect ([link](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics))
 
-:one: [- Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
-:two: [- Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
-:three: [- Instrumental Variables](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%203%20-%20Instrumental%20Variables.md): Stage 1&2 of 2SLS (no SE Adjustment), Direct IV Regression (with SE Adjustment)\
-:four: [- Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
-:five: [- Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
+Chapter 1 - [Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
+Chapter 2 - [Regression](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%202%20-%20Regression.md): Single Variable OLS, Multiple Variable OLS, Multicollinearity, Quadratics, Logs, Interaction Effects, Binary	Dependent	Variable\
+Chapter 3 - [Instrumental Variables](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%203%20-%20Instrumental%20Variables.md): Stage 1&2 of 2SLS (no SE Adjustment), Direct IV Regression (with SE Adjustment)\
+Chapter 4 - [Regression Continuity Designs](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%204%20-%20Regression%20Continuity%20Designs.md): AR	Models, Regression Discontinuity Designs\
+Chapter 5 - [Differences in Differences](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%205%20-%20Differences%20in%20Differences.md)
 
 ### :book: Book 2: Analysis of Financial Data with R ([link](https://faculty.chicagobooth.edu/ruey-s-tsay/research/an-introduction-to-analysis-of-financial-data-with-r))
 
