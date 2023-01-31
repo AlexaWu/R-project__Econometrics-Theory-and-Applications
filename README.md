@@ -1,6 +1,6 @@
-# R Project: Econometrics Theory and Applications
+# R Project - Econometrics Theory and Applications (school coursework)
 
-### High Level Overview
+### Project overview
 
 - Utilized R programming language to run statistical calculations on supplied data sets.
 - Applied econometric methods involving panel and time series data.
