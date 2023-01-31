@@ -64,6 +64,11 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 :two: [Part 2 Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#project-contents)
 
 1. Linear Model Analysis of Vanguard Total Stock Market Index Fund
+
+A. Test monthly log returns for autocorrelation
+B. Autoregressive model
+C. Moving average model
+
 2. Modeling Volatility for Amazon, Inc.
 
 [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#r-code-and-output)
