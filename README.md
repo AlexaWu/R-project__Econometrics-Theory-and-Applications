@@ -8,6 +8,8 @@
 
 > This is a project from Master’s level course in Econometrics. Econometrics is applying	statistical tools and techniques to	study	economic issues	and	theory. This course will focus on **econometric methods involving panel and time series data**, with applications relevant for both economics and finance.
 
+-----
+
 ### :book: Textbook 1: Mastering ‘Metrics: The Path From Cause To Effect ([link](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics))
 
 Chapter 1 - [Randomized Trials](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Metrics%201%20-%20Randomized%20Trials.md)\
@@ -23,11 +25,13 @@ Chapter 2&3 - [Linear Models for Financial Time Series - Autoregressive Models](
 Chapter 2&3 - [Linear Models for Financial Time Series - From	AR	to	ARMA	Models](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%203%20-%20Time%20Series(2).md)\
 Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Analysis%20of%20Financial%20Data%20with%20R%204.r)
 
-### :computer: Project 1: Assessing Income and Education Using BLS Data
+-----
+
+## :computer: Project 1: Assessing Income and Education Using BLS Data
 
 > Dataset Resource: The National Longitudinal Surveys (NLS), sponsored by the Bureau of Labor Statistics, are a family of surveys dedicated to tracking the labor market and other life experiences of American men and women
 
-:one: [Part 1 - Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
+#### Part 1 - [Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
 
 1. Downloading Data
 2. Data Manipulation in Excel
@@ -36,7 +40,7 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 
 [R Code and Output](https://github.com/AlexaWu/R-project__Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
 
-:two: [Part 2 - Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
+#### Part 2 - [Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
 
 1. Data Manipulation
 2. Hypothesis Testing
@@ -46,12 +50,12 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 
 [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
 
-### :computer: Project 2: Analysis of Financial Data 
+## :computer: Project 2: Analysis of Financial Data 
 
 > Dataset: Daily stock prices for Amazon(AMZN) and daily index prices for the Vanguard Total Stock Market Index Fund(VTSMX), via Yahoo Finance for the period January 1, 2008 through December 31, 2015
  
 
-:one: [Part 1 Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-1:%20Analysis%20of%20Financial%20Data.md#project-contents)
+#### Part 1 - [Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-1:%20Analysis%20of%20Financial%20Data.md#project-contents)
 
 1. Stock Price Data
 2. Daily Log Returns for Stock Data
@@ -61,7 +65,7 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 
 [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-1:%20Analysis%20of%20Financial%20Data.md#r-code-and-output)
 
-:two: [Part 2 Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#project-contents)
+#### Part 2 - [Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#project-contents)
 
 1. Linear Model Analysis of Vanguard Total Stock Market Index Fund
 
