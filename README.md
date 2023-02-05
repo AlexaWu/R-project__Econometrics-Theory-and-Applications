@@ -38,7 +38,7 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 3. Data Analysis re: Income
 4. Data Analysis re: Income and AFQT
 
-[R Code and Output](https://github.com/AlexaWu/R-project__Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
+      [R Code and Output](https://github.com/AlexaWu/R-project__Econometrics-Theory-and-Applications/blob/master/Project%201-1:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
 
 #### Part 2 - [Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#project-contents)
 
@@ -48,7 +48,7 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 4. Basic Linear: Multiple Variable Regression
 5. Various Functional Forms: Multiple Variable Regression
 
-[R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
+      [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%201-2:%20Assessing%20Income%20and%20Education%20Using%20BLS%20Data.md#r-code-and-output)
 
 ## :computer: Project 2: Analysis of Financial Data 
 
@@ -63,7 +63,7 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 4. Computing Monthly Log Returns
 5. Analysis of Monthly Log Returns
 
-[R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-1:%20Analysis%20of%20Financial%20Data.md#r-code-and-output)
+      [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-1:%20Analysis%20of%20Financial%20Data.md#r-code-and-output)
 
 #### Part 2 - [Project Contents](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#project-contents)
 
@@ -81,4 +81,4 @@ Chapter 4&5 - [Asset Volatility](https://github.com/AlexaWu/R-project---Economet
 &emsp;D. Test for ARCH effects\
 &emsp;E. Build an ARCH model
 
-[R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#r-code-and-output)
+      [R Code and Output](https://github.com/AlexaWu/R-project---Econometrics-Theory-and-Applications/blob/master/Project%202-2:%20Analysis%20of%20Financial%20Data.md#r-code-and-output)
